@@ -1,0 +1,14 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(scene.path!=EchoStation.InfiltrationMetal.Editor.MetalScene.ScenePath||UnityEditor.EditorApplication.isPlaying)throw new System.InvalidOperationException("Preserve unexpected workspace");
+var root=EchoStation.InfiltrationMetal.Editor.MetalScene.World(scene);
+var objects=root.GetComponentsInChildren<UnityEngine.Transform>(true);
+var probes=root.GetComponentsInChildren<UnityEngine.ReflectionProbe>();
+var planes=root.GetComponentsInChildren<EchoStation.InfiltrationMetal.MetalPlanar>();
+var camera=root.GetComponentInChildren<UnityEngine.Camera>();
+var pipeline=new UnityEditor.SerializedObject(UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset>(EchoStation.InfiltrationMetal.Editor.MetalScene.PipelinePath));
+var list=pipeline.FindProperty("m_RendererDataList");
+var main=(UnityEngine.Rendering.Universal.UniversalRendererData)list.GetArrayElementAtIndex(0).objectReferenceValue;
+var auxiliary=(UnityEngine.Rendering.Universal.UniversalRendererData)list.GetArrayElementAtIndex(1).objectReferenceValue;
+var result=new {scene=scene.path,dirty=scene.isDirty,playing=UnityEditor.EditorApplication.isPlaying,missingScripts=objects.Sum(t=>UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject)),floors=root.GetComponentsInChildren<EchoStation.InfiltrationLevel.LevelFloor>().Length,netArea=EchoStation.InfiltrationLevel.LevelLayout.ConservativeNetArea(root),posts=root.GetComponentsInChildren<EchoStation.InfiltrationLevel.LevelPost>().Select(p=>new{id=p.Id,futurePatrol=p.FuturePatrol}).ToArray(),decorations=root.GetComponentsInChildren<EchoStation.InfiltrationRefinement.RefinementDecoration>().Length,mainCamera=camera.name,cameraHdr=camera.allowHDR,displayHdr=camera.GetComponent<UnityEngine.Rendering.Universal.UniversalAdditionalCameraData>().allowHDROutput,planes=planes.Length,planeTextureAllocated=planes.Any(p=>p.LastTexture),temporaryCameras=UnityEngine.Resources.FindObjectsOfTypeAll<UnityEngine.Camera>().Count(c=>c.name.StartsWith("MM_PlanarCamera_")),probes=probes.Select(p=>new{name=p.name,resolution=p.resolution,asset=UnityEditor.AssetDatabase.GetAssetPath(p.customBakedTexture)}).ToArray(),lightmaps=UnityEngine.LightmapSettings.lightmaps.Length,mainFeatures=main.rendererFeatures.Count(f=>f&&f.isActive),auxiliaryFeatures=auxiliary.rendererFeatures.Count,api=UnityEngine.SystemInfo.graphicsDeviceType.ToString(),aiConnected=false};
+return result;

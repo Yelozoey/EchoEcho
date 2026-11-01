@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "error": null,
+  "seconds": 8.7054721,
+  "lightmaps": 2,
+  "colors": [
+    "Assets/EchoStation/InfiltrationCoated/Scenes/ES_Infiltration_Coated/Lightmap-0_comp_light.exr",
+    "Assets/EchoStation/InfiltrationCoated/Scenes/ES_Infiltration_Coated/Lightmap-1_comp_light.exr"
+  ],
+  "probes": 216,
+  "lightmapper": "ProgressiveGPU",
+  "errors": [],
+  "layoutRestored": true
+}

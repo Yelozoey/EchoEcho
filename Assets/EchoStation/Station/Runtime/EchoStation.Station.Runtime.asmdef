@@ -1,0 +1,23 @@
+{
+  "name": "EchoStation.Station.Runtime",
+  "references": [
+    "EchoStation.Story.Runtime",
+    "EchoStation.Memory.Runtime",
+    "EchoStation.Memory.Integration",
+    "EchoStation.Dialogue.Runtime",
+    "EchoStation.Dialogue.Commands",
+    "EchoStation.Dialogue.Knowledge",
+    "EchoStation.Dialogue.Integration",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.World.Runtime",
+    "EchoStation.Rendering.Runtime",
+    "Unity.InputSystem",
+    "UnityEngine.UI",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.AI.Navigation",
+    "EchoStation.Puzzles.Runtime",
+    "EchoStation.Persistence.Runtime"
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"EchoStation.LLMShortTasks.Runtime","references":["EchoStation.Player.Runtime","EchoStation.Salvage.Runtime","EchoStation.SalvageNext.Runtime","Unity.InputSystem","UnityEngine.UI"],"overrideReferences":true,"precompiledReferences":["Newtonsoft.Json.dll"]}

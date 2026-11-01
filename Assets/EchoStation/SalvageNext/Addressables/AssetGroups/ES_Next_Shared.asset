@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ES_Next_Shared
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: ES_Next_Shared
+  m_GUID: 3c1ec18252b5a7740ba323469efe8a7c
+  m_SerializeEntries:
+  - m_GUID: 310d8412db598fb4089f26a9b5891d3b
+    m_Address: es-next-shared-310d8412db598fb4089f26a9b5891d3b
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 323e83a153605ef4c8d0ae563829890a
+    m_Address: es-next-shared-323e83a153605ef4c8d0ae563829890a
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3550b917b5f88194b94293d5661bd515
+    m_Address: es-next-shared-3550b917b5f88194b94293d5661bd515
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3735ffb8613f29a42967bb696798be5a
+    m_Address: es-next-shared-3735ffb8613f29a42967bb696798be5a
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3aa704f513c0e8b42ab92960a817c0f0
+    m_Address: es-next-shared-3aa704f513c0e8b42ab92960a817c0f0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b47d7b80cc767b4ba62b4aecbe04914
+    m_Address: es-next-shared-3b47d7b80cc767b4ba62b4aecbe04914
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c2ebed3bf003b949a772b62cd034310
+    m_Address: es-next-shared-3c2ebed3bf003b949a772b62cd034310
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55fa9de95d88ce34daa46d7a22c07a73
+    m_Address: es-next-shared-55fa9de95d88ce34daa46d7a22c07a73
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 568a64d8578f5dd4f9446d3c770bd607
+    m_Address: es-next-shared-568a64d8578f5dd4f9446d3c770bd607
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56d33d92cc125ee4ebe1ec86d0020a5d
+    m_Address: es-next-shared-56d33d92cc125ee4ebe1ec86d0020a5d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d1e2d5c8d2b6024a9146a0236073723
+    m_Address: es-next-shared-5d1e2d5c8d2b6024a9146a0236073723
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e339ed16a047584fae74986d4e548c6
+    m_Address: es-next-shared-5e339ed16a047584fae74986d4e548c6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7243e51ab9c026949bd514b768abe861
+    m_Address: es-next-shared-7243e51ab9c026949bd514b768abe861
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84c612e855f556f4d8b823505b20d638
+    m_Address: es-next-shared-84c612e855f556f4d8b823505b20d638
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97fadcaf13ca7d647a802e4eae1cee4f
+    m_Address: es-next-shared-97fadcaf13ca7d647a802e4eae1cee4f
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9dfca4f117194324bbe6e35f1f926c9a
+    m_Address: es-next-shared-9dfca4f117194324bbe6e35f1f926c9a
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4e92a0876885034b8b9b996b45e6cf3
+    m_Address: es-next-shared-a4e92a0876885034b8b9b996b45e6cf3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a51c2746ac117f04eb529f6d619a295c
+    m_Address: es-next-shared-a51c2746ac117f04eb529f6d619a295c
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8b766e7d5064e54c81faf41484dcc78
+    m_Address: es-next-shared-a8b766e7d5064e54c81faf41484dcc78
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: abe0901b86fc02d4bae71d377d413ef3
+    m_Address: es-next-shared-abe0901b86fc02d4bae71d377d413ef3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b42989e77393bd94d83f74bd3079d6a5
+    m_Address: es-next-shared-b42989e77393bd94d83f74bd3079d6a5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b875bd112a2d839468ca3be59b46d642
+    m_Address: es-next-shared-b875bd112a2d839468ca3be59b46d642
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c053977c3c1598b44b176915205f2921
+    m_Address: es-next-shared-c053977c3c1598b44b176915205f2921
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc55d0fafd3a7b54484e9457bd9b2122
+    m_Address: es-next-shared-cc55d0fafd3a7b54484e9457bd9b2122
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfa976b215dcaf74f87ce0c371fce54f
+    m_Address: es-next-shared-cfa976b215dcaf74f87ce0c371fce54f
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d166d919dc9efc34a870790b70b81833
+    m_Address: es-next-shared-d166d919dc9efc34a870790b70b81833
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d70d712452c0ce642b5ca1297e14b741
+    m_Address: es-next-shared-d70d712452c0ce642b5ca1297e14b741
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd531f6facc81fe419c50c1c98b38cc7
+    m_Address: es-next-shared-dd531f6facc81fe419c50c1c98b38cc7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfc5c3fc672187e4eab794cfce3c85b4
+    m_Address: es-next-shared-dfc5c3fc672187e4eab794cfce3c85b4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e54f5996015844b439b04c68555937e6
+    m_Address: es-next-shared-e54f5996015844b439b04c68555937e6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ead75fd1a015538448b140b91d468df4
+    m_Address: es-next-shared-ead75fd1a015538448b140b91d468df4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed24e2b2c4767d14fbddd1b6d7096265
+    m_Address: es-next-shared-ed24e2b2c4767d14fbddd1b6d7096265
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f18c79910e2cda347a2228b4fc9f2792
+    m_Address: es-next-shared-f18c79910e2cda347a2228b4fc9f2792
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f37b5eb5b28f8db4eb43f8c828a4eec4
+    m_Address: es-next-shared-f37b5eb5b28f8db4eb43f8c828a4eec4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f728182b43e779b4eaa9379c98761fb5
+    m_Address: es-next-shared-f728182b43e779b4eaa9379c98761fb5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f88a8375a6a7be045a94cf49df7d4b5f
+    m_Address: es-next-shared-f88a8375a6a7be045a94cf49df7d4b5f
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 441acf757ced17347842b42bd5f9ec10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d825a9824a48c494292554efc551ceb6, type: 2}
+    - {fileID: 11400000, guid: 9cb1323249a9fbd4181744ffc64d4f35, type: 2}

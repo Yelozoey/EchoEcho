@@ -1,0 +1,4 @@
+if(UnityEditor.EditorApplication.isCompiling)throw new System.InvalidOperationException("Compilation active");
+if(!UnityEditor.EditorApplication.isPlaying)return new {stopped=false,alreadyEditing=true};
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();if(scene.path!="Assets/EchoStation/SalvageExpansion/Scenes/ES_EnvironmentalSalvage.unity")throw new System.InvalidOperationException("Preserve a different user Play session");
+UnityEditor.EditorApplication.isPlaying=false;return new {requestedExit=true,scene=scene.path,savedAssets=false};

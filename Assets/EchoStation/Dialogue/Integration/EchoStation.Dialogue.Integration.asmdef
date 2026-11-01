@@ -1,0 +1,7 @@
+{
+  "name": "EchoStation.Dialogue.Integration",
+  "references": [
+    "EchoStation.Dialogue.Runtime", "EchoStation.Dialogue.Commands", "EchoStation.Player.Runtime",
+    "EchoStation.Echo.Runtime", "EchoStation.Memory.Runtime", "EchoStation.Memory.Integration"
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"EchoStation.Persistence.Runtime","noEngineReferences":true,"overrideReferences":true,"precompiledReferences":["Newtonsoft.Json.dll"],"references":["EchoStation.Memory.Runtime","EchoStation.Story.Runtime","EchoStation.Puzzles.Runtime","EchoStation.Dialogue.Runtime"]}

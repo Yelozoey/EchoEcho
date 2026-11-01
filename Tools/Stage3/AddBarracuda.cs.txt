@@ -1,0 +1,4 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode||UnityEditor.EditorApplication.isCompiling||UnityEditor.BuildPipeline.isBuildingPlayer)throw new System.InvalidOperationException("Editor busy");
+var request=UnityEditor.PackageManager.Client.Add("com.unity.barracuda@3.0.2");
+return new{requested="com.unity.barracuda@3.0.2",completed=request.IsCompleted};

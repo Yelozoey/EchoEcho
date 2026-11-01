@@ -1,0 +1,14 @@
+if(UnityEngine.Profiling.Profiler.enabled||UnityEditorInternal.ProfilerDriver.firstFrameIndex!=-1||UnityEditorInternal.ProfilerDriver.lastFrameIndex!=-1)throw new System.InvalidOperationException("User Profiler state occupied; preserving it");
+var items=new System.Collections.Generic.List<object>();var first=-1;var last=-1;
+try{
+ if(!UnityEditorInternal.ProfilerDriver.LoadProfile("Docs/Tests/Stage2/Evidence/S2-V03/Windows_Performance02/S2Profiler.raw",false))throw new System.InvalidOperationException("Own capture load failed");
+ first=UnityEditorInternal.ProfilerDriver.firstFrameIndex;last=UnityEditorInternal.ProfilerDriver.lastFrameIndex;
+ for(var frame=System.Math.Max(first,last-62);frame<last-2;frame++)using(var view=UnityEditorInternal.ProfilerDriver.GetRawFrameDataView(frame,0)){
+  if(!view.valid)continue;var parents=new System.Collections.Generic.List<int>();
+  for(var i=0;i<view.sampleCount;i++){while(parents.Count>0&&i>parents[parents.Count-1]+view.GetSampleChildrenCountRecursive(parents[parents.Count-1]))parents.RemoveAt(parents.Count-1);
+   if(view.GetSampleName(i)=="GC.Alloc")items.Add(new{frame=frame,bytes=view.GetSampleMetadataCount(i)>0?view.GetSampleMetadataAsLong(i,0):-1,parents=parents.Select(p=>view.GetSampleName(p)).ToArray()});
+   if(view.GetSampleChildrenCount(i)>0)parents.Add(i);
+  }
+ }
+}finally{UnityEditorInternal.ProfilerDriver.ClearAllFrames();}
+return new{first=first,last=last,items=items,restored=UnityEditorInternal.ProfilerDriver.firstFrameIndex==-1&&UnityEditorInternal.ProfilerDriver.lastFrameIndex==-1&&!UnityEngine.Profiling.Profiler.enabled};

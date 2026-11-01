@@ -1,0 +1,23 @@
+{
+  "name": "EchoStation.Station.Editor",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "references": [
+    "EchoStation.Station.Runtime",
+    "EchoStation.Story.Runtime",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Player.Editor",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.Echo.Editor",
+    "EchoStation.World.Runtime",
+    "EchoStation.World.Editor",
+    "EchoStation.Rendering.Runtime",
+    "EchoStation.Rendering.Editor",
+    "EchoStation.Dialogue.Integration",
+    "Unity.AI.Navigation",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Memory.Runtime"
+  ]
+}

@@ -1,0 +1,4 @@
+var api=System.AppDomain.CurrentDomain.GetAssemblies().Select(a=>a.GetType("UnityEditor.TestTools.TestRunner.Api.TestRunnerApi")).FirstOrDefault(t=>t!=null);
+var method=api==null?null:api.GetMethod("IsRunActive",System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static);
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+return new {playing=UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode,compiling=UnityEditor.EditorApplication.isCompiling,updating=UnityEditor.EditorApplication.isUpdating,testsActive=method==null||(bool)method.Invoke(null,null),scene=scene.path,sceneDirty=scene.isDirty};

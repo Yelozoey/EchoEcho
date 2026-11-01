@@ -1,0 +1,1 @@
+{"name":"EchoStation.L01.Domain.Editor.Tests","references":["EchoStation.L01.Domain"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"noEngineReferences":true}

@@ -1,0 +1,31 @@
+{
+  "name": "EchoStation.Salvage.Editor.Tests",
+  "rootNamespace": "EchoStation.Salvage.Tests",
+  "references": [
+    "EchoStation.Salvage.Runtime",
+    "EchoStation.Salvage.Editor",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Rendering.Editor",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.Salvage.Validation",
+    "UnityEngine.UI",
+    "EchoStation.World.Runtime",
+    "EchoStation.Dialogue.Runtime",
+    "EchoStation.Player.Editor.Tests",
+    "Unity.InputSystem",
+    "EchoStation.Rendering.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll",
+    "Newtonsoft.Json.dll"
+  ]
+}

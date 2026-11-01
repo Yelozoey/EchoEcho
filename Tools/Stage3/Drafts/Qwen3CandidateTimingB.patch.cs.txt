@@ -1,0 +1,62 @@
+UNEXECUTED DIAGNOSTIC PATCH ONLY.
+The completed candidate A result is 18/18 structure and 15/18 semantics, below
+the locked >=17/18 gate. Do not run or adapt Qwen3 from this file. Root requested
+that this small optional diagnostic be preserved without further development.
+This has not been compiled or measured and makes no performance claim.
+
+If separately authorized later, apply these edits to a NEW COPY of
+Qwen3CandidateJsonTests.cs.txt named Qwen3CandidateJsonTimingBTests.cs.txt.
+Never modify the preserved A draft, A evidence, Assets, or acceptance thresholds.
+
+--- Qwen3CandidateJsonTests.cs.txt
++++ Qwen3CandidateJsonTimingBTests.cs.txt
+@@
+- public sealed class Qwen3CandidateJsonTests
++ public sealed class Qwen3CandidateJsonTimingBTests
+@@
+-   var output=Path.GetFullPath(Evidence+"/UnityJson_"+DateTime.UtcNow.ToString("yyyyMMddTHHmmssfffffffZ")+"_"+Guid.NewGuid().ToString("N")+".json");
++   var output=Path.GetFullPath(Evidence+"/UnityJsonTimingB_"+DateTime.UtcNow.ToString("yyyyMMddTHHmmssfffffffZ")+"_"+Guid.NewGuid().ToString("N")+".json");
+@@
+-     var started=Stopwatch.StartNew();var before=backend.Calls;
++     var started=Stopwatch.StartNew();var before=backend.Calls;
++     var nativeBefore=backend.NativeRunSeconds;var validationBefore=backend.ValidationSeconds;
+@@
+       previousComplete=Stopwatch.GetTimestamp();row["wallSeconds"]=started.Elapsed.TotalSeconds;row["nativeCalls"]=backend.Calls-before;row["cacheAfter"]=backend.Consumed;row["nativeRunThread"]=backend.LastRunThread;
++      row["nativeRunSeconds"]=backend.NativeRunSeconds-nativeBefore;
++      row["validationSeconds"]=backend.ValidationSeconds-validationBefore;
+@@
+      if(backend!=null)
+      {
++      report["nativeRunSecondsTotal"]=backend.NativeRunSeconds;
++      report["validationSecondsTotal"]=backend.ValidationSeconds;
++      report["timingScope"]="NativeRun measures session.Run only; validation includes ToArray and every output dtype/shape/count/finite check; no measured A/B improvement claimed";
+@@
+    public int LastRunThread {get;private set;}public int MainNativeCalls {get;private set;}
++   private long nativeRunTicks,validationTicks;
++   public double NativeRunSeconds=>nativeRunTicks/(double)Stopwatch.Frequency;
++   public double ValidationSeconds=>validationTicks/(double)Stopwatch.Frequency;
+@@
+-      calls++;LastRunThread=Thread.CurrentThread.ManagedThreadId;if(LastRunThread==main)MainNativeCalls++;next=session.Run(options,inputs,feeds,outputs);CollectionsCreated++;var nextValues=next.ToArray();Need(nextValues.Length==57,"Candidate runtime output count");
+-      for(var i=0;i<nextValues.Length;i++)
+-      {
+-       var shape=nextValues[i].GetTensorTypeAndShape();Need(shape.ElementDataType==TensorElementType.Float,"Candidate runtime dtype");var expected=i==0?new long[]{1,1,151936}:new long[]{1,8,total,128};Need(shape.Shape.SequenceEqual(expected),"Candidate runtime shape");
+-       var tensor=nextValues[i].GetTensorDataAsSpan<float>();Need(tensor.Length==(i==0?151936:8*total*128),"Candidate runtime tensor count");for(var n=0;n<tensor.Length;n++)Need(!float.IsNaN(tensor[n])&&!float.IsInfinity(tensor[n]),"Candidate nonfinite tensor");
+-      }
++      calls++;LastRunThread=Thread.CurrentThread.ManagedThreadId;if(LastRunThread==main)MainNativeCalls++;
++      var runStarted=Stopwatch.GetTimestamp();
++      try{next=session.Run(options,inputs,feeds,outputs);}
++      finally{nativeRunTicks+=Stopwatch.GetTimestamp()-runStarted;}
++      CollectionsCreated++;OrtValue[] nextValues;
++      var validationStarted=Stopwatch.GetTimestamp();
++      try
++      {
++       nextValues=next.ToArray();Need(nextValues.Length==57,"Candidate runtime output count");
++       for(var i=0;i<nextValues.Length;i++)
++       {
++        var shape=nextValues[i].GetTensorTypeAndShape();Need(shape.ElementDataType==TensorElementType.Float,"Candidate runtime dtype");var expected=i==0?new long[]{1,1,151936}:new long[]{1,8,total,128};Need(shape.Shape.SequenceEqual(expected),"Candidate runtime shape");
++        var tensor=nextValues[i].GetTensorDataAsSpan<float>();Need(tensor.Length==(i==0?151936:8*total*128),"Candidate runtime tensor count");
++        for(var n=0;n<tensor.Length;n++)
++         if(float.IsNaN(tensor[n])||float.IsInfinity(tensor[n]))throw new InvalidDataException("Candidate nonfinite tensor");
++       }
++      }
++      finally{validationTicks+=Stopwatch.GetTimestamp()-validationStarted;}

@@ -1,0 +1,9 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+return new {
+run=typeof(Microsoft.ML.OnnxRuntime.InferenceSession).GetMethods().Where(m=>m.Name=="Run").Select(m=>m.ToString()).ToArray(),
+tensor=typeof(Microsoft.ML.OnnxRuntime.OrtValue).GetMethods().Where(m=>m.Name.Contains("Tensor")||m.Name=="Dispose").Select(m=>m.ToString()).ToArray(),
+metadata=typeof(Microsoft.ML.OnnxRuntime.NodeMetadata).GetProperties().Select(p=>p.ToString()).ToArray(),
+options=typeof(Microsoft.ML.OnnxRuntime.SessionOptions).GetMethods().Where(m=>m.Name.Contains("CPU")||m.Name.Contains("Config")).Select(m=>m.ToString()).ToArray(),
+environment=typeof(Microsoft.ML.OnnxRuntime.OrtEnv).GetMethods().Where(m=>m.Name.Contains("Telemetry")||m.Name=="Instance").Select(m=>m.ToString()).ToArray(),
+runOptions=typeof(Microsoft.ML.OnnxRuntime.RunOptions).GetProperties().Select(p=>p.ToString()).ToArray()
+};

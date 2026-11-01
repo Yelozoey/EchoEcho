@@ -1,0 +1,4405 @@
+{
+  "scope": "frozen isolated held-out suite, not new gameplay",
+  "cases": [
+    {
+      "input": "Echo，走在我的后面。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "现在跟着玩家移动。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请陪我一起往前走。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "保持跟随模式。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "我要出发了，跟上。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "停止等候，改为跟我走。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请随我继续前进。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "一直跟在我身边。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，陪着我移动。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "与我同行。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "恢复跟随玩家。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "接下来你随我走。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "别留在原处，跟我离开。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "保持在我的后方跟随。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请继续随行。",
+      "expected": "Follow",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，先在此处等待。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "停止移动并待命。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "留在当前位置等我回来。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "这次不要跟过来，在原地等候。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "暂停跟随，原地等待。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请停在这里。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "切换到待命模式。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你暂时留在这里。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，停止前进。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "不要移动，等我的下一条指令。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "在这个位置保持静止。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "先停下来待命。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "在这里候着我。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "暂时停止跟随。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请原地停留。",
+      "expected": "Wait",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请检查温度探头。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "去扫描继电器箱。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "帮我调查检修标记。",
+      "expected": "Investigate",
+      "target": "fixture_marker_03",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，对温度探头进行扫描。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请前往继电器箱调查。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "前往检修标记进行扫描。",
+      "expected": "Investigate",
+      "target": "fixture_marker_03",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "调查fixture_sensor_01。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请扫描fixture_relay_02。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "检查fixture_marker_03。",
+      "expected": "Investigate",
+      "target": "fixture_marker_03",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "现在去温度探头那里扫描。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "对继电器箱做一次调查。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请前去扫描检修标记。",
+      "expected": "Investigate",
+      "target": "fixture_marker_03",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，扫描这个温度探头。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "我要你去检查继电器箱。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "前往检修标记调查。",
+      "expected": "Investigate",
+      "target": "fixture_marker_03",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请调查温度探头的位置。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "对fixture_relay_02进行扫描。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "去检查fixture_marker_03。",
+      "expected": "Investigate",
+      "target": "fixture_marker_03",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "扫描一下温度探头。",
+      "expected": "Investigate",
+      "target": "fixture_sensor_01",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请去查看继电器箱。",
+      "expected": "Investigate",
+      "target": "fixture_relay_02",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请提醒我裸露电缆的危险。",
+      "expected": "Warn",
+      "target": "fixture_cable_04",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "对高温阀发出警告。",
+      "expected": "Warn",
+      "target": "fixture_valve_05",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "警示fixture_cable_04的风险。",
+      "expected": "Warn",
+      "target": "fixture_cable_04",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "提醒我远离fixture_valve_05。",
+      "expected": "Warn",
+      "target": "fixture_valve_05",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，警告裸露电缆。",
+      "expected": "Warn",
+      "target": "fixture_cable_04",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请对高温阀进行危险提醒。",
+      "expected": "Warn",
+      "target": "fixture_valve_05",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "告诉我注意裸露电缆的危险。",
+      "expected": "Warn",
+      "target": "fixture_cable_04",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "现在警告fixture_valve_05。",
+      "expected": "Warn",
+      "target": "fixture_valve_05",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "提醒我与裸露电缆保持距离。",
+      "expected": "Warn",
+      "target": "fixture_cable_04",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请发出关于高温阀的警告。",
+      "expected": "Warn",
+      "target": "fixture_valve_05",
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "介绍一下你自己。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你的名字叫什么？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你是什么类型的机器人？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你在观测站负责什么？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "我应该怎么称呼你？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你能提供哪些帮助？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "说明一下你的能力范围。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你是否能整理已知线索？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你可以提供推理提示吗？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你能为玩家做些什么？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "温度探头的记录写了什么？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "继电器箱有哪些已知资料？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "关于检修标记你知道什么？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "为什么要远离裸露电缆？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "高温阀有哪些风险？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请扫描未发现的气象天线。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "调查列表里没有的水质仪。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请检查不存在的信号塔。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "扫描尚未定位的探测器。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "去调查未列入目标的摄像头。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你记得我们已经发现哪些设备吗？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "现在有哪些已知危险？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请总结目前的设备信息。",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你为什么不能替我操作机关？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "我们应该根据什么推断事故原因？",
+      "expected": "Answer",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "Echo，帮我把这扇门打开。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请代替我解开终端密码。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你来完成这个环境谜题。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "替玩家接通供电回路。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "帮我输入终端的密码。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请替我操作开门按钮。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "直接帮我解开机关。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "替我切换电路开关。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "我让你代为完成解谜。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "帮我把终端解锁。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "你去替我关闭实验室的门。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请代我按下机关按钮。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "把解谜操作全部替我做完。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "替我操作控制面板打开通路。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        }
+      ]
+    },
+    {
+      "input": "请你代输密码并开门。",
+      "expected": "Refuse",
+      "target": null,
+      "zone": "fixture_lab",
+      "summary": "已发现温度探头、继电器箱和检修标记；电缆裸露，高温阀需保持距离。",
+      "targets": [
+        {
+          "id": "fixture_valve_05",
+          "name": "高温阀",
+          "actions": [
+            "warn"
+          ]
+        },
+        {
+          "id": "fixture_sensor_01",
+          "name": "温度探头",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_relay_02",
+          "name": "继电器箱",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_marker_03",
+          "name": "检修标记",
+          "actions": [
+            "investigate"
+          ]
+        },
+        {
+          "id": "fixture_cable_04",
+          "name": "裸露电缆",
+          "actions": [
+            "warn"
+          ]
+        }
+      ]
+    }
+  ]
+}

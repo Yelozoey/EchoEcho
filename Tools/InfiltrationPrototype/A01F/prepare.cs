@@ -1,0 +1,1 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean(); EchoStation.InfiltrationCoated.Editor.CoatLighting.Prepare(); return new {prepared=true};

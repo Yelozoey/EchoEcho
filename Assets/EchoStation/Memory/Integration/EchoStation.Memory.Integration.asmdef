@@ -1,0 +1,4 @@
+{
+  "name": "EchoStation.Memory.Integration",
+  "references": ["EchoStation.Memory.Runtime", "EchoStation.Player.Runtime", "EchoStation.World.Runtime"]
+}

@@ -1,0 +1,1 @@
+{"name":"EchoStation.LLMShortTasks.Editor.Tests","includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"references":["EchoStation.Player.Runtime","EchoStation.Player.Editor.Tests","EchoStation.Rendering.TestFixture","Unity.InputSystem","UnityEngine.UI"],"allowUnsafeCode":true}

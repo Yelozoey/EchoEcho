@@ -1,0 +1,197 @@
+{
+  "parts": [
+    {
+      "path": "Builds/S3",
+      "bytes": 0
+    },
+    {
+      "path": "Builds/Salvage",
+      "bytes": 4297157189
+    },
+    {
+      "path": "Builds/SalvageExpansion",
+      "bytes": 240546877
+    },
+    {
+      "path": "Builds/SalvageNext",
+      "bytes": 265552257
+    },
+    {
+      "path": "Docs/SalvagePrototype",
+      "bytes": 293029
+    },
+    {
+      "path": "Docs/Stage3",
+      "bytes": 142008
+    },
+    {
+      "path": "Library/BuildCache",
+      "bytes": 168743628
+    },
+    {
+      "path": "Library/com.unity.addressables",
+      "bytes": 18050946
+    },
+    {
+      "path": "Tools/Salvage",
+      "bytes": 9821
+    },
+    {
+      "path": "Tools/SalvageExpansion",
+      "bytes": 43109
+    },
+    {
+      "path": "Tools/SalvageNext",
+      "bytes": 88916
+    },
+    {
+      "path": "Tools/Stage3",
+      "bytes": 1061444
+    },
+    {
+      "path": "Assets/EchoStation/AI",
+      "bytes": 19397335
+    },
+    {
+      "path": "Assets/EchoStation/Salvage",
+      "bytes": 18947828
+    },
+    {
+      "path": "Assets/EchoStation/SalvageExpansion",
+      "bytes": 816875
+    },
+    {
+      "path": "Assets/EchoStation/SalvageNext",
+      "bytes": 100687222
+    },
+    {
+      "path": "Assets/StreamingAssets/EchoLLM",
+      "bytes": 1902696028
+    },
+    {
+      "path": "Builds/Tests/S3-G01",
+      "bytes": 243952356
+    },
+    {
+      "path": "Docs/Assets/ThirdPartyLicenses.md",
+      "bytes": 2829
+    },
+    {
+      "path": "Docs/Tests/SalvagePrototype",
+      "bytes": 2436318759
+    },
+    {
+      "path": "Docs/Tests/Stage3",
+      "bytes": 250800383
+    },
+    {
+      "path": "Library/EchoStation/R2SaveTests",
+      "bytes": 0
+    },
+    {
+      "path": "Library/EchoStation/R2SceneSaveTests",
+      "bytes": 0
+    },
+    {
+      "path": "Library/EchoStation/R2Walkthrough",
+      "bytes": 8890
+    },
+    {
+      "path": "Library/EchoStation/S3Cache",
+      "bytes": 9800133987
+    },
+    {
+      "path": "Library/EchoStation/S3Python",
+      "bytes": 222074929
+    },
+    {
+      "path": "Library/EchoStation/S3SceneCreation.json",
+      "bytes": 472
+    },
+    {
+      "path": "Library/EchoStation/S3Staging",
+      "bytes": 0
+    },
+    {
+      "path": "Library/EchoStation/S3Tests",
+      "bytes": 0
+    },
+    {
+      "path": "Library/EchoStation/SalvageExpansion",
+      "bytes": 78329
+    },
+    {
+      "path": "Library/EchoStation/SalvageNext",
+      "bytes": 1245347
+    },
+    {
+      "path": "Library/EchoStation/SalvageSaveTests",
+      "bytes": 0
+    },
+    {
+      "path": "Library/PackageCache/com.unity.addressables@42676f2a154e",
+      "bytes": 285685950
+    },
+    {
+      "path": "Library/PackageCache/com.unity.scriptablebuildpipeline@61526b33bf2c",
+      "bytes": 1086440
+    },
+    {
+      "path": "Tools/Assets/receive_salvage_sources.py",
+      "bytes": 23153
+    },
+    {
+      "path": "Tools/Assets/retry_megakit.py",
+      "bytes": 1607
+    },
+    {
+      "path": "Tools/Assets/test_salvage_intake.py",
+      "bytes": 3986
+    },
+    {
+      "path": "Assets/EchoStation/Tests/AIEditor",
+      "bytes": 397097
+    },
+    {
+      "path": "Assets/EchoStation/Tests/AIEditor.meta",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/EchoStation/Tests/AIExecutionEditor",
+      "bytes": 88745
+    },
+    {
+      "path": "Assets/EchoStation/Tests/AIExecutionEditor.meta",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/EchoStation/Tests/SalvageEditor",
+      "bytes": 110000
+    },
+    {
+      "path": "Assets/EchoStation/Tests/SalvageExpansionEditor",
+      "bytes": 97934
+    },
+    {
+      "path": "Assets/EchoStation/Tests/SalvageFixtures",
+      "bytes": 29709
+    },
+    {
+      "path": "Assets/EchoStation/Tests/SalvageNextEditor",
+      "bytes": 399512
+    },
+    {
+      "path": "Assets/EchoStation/Tests/SalvageNextFixtures",
+      "bytes": 39187
+    },
+    {
+      "path": "Docs/Assets/Sources/SalvageNext",
+      "bytes": 9576846
+    },
+    {
+      "path": "Docs/Assets/Sources/SalvagePrototype",
+      "bytes": 316213084
+    }
+  ],
+  "note": "Project-relative resource accounting roots from prior baseline; missing local caches/archives contribute zero on a new clone. A01F adds current assets and .git, with user-approved 21GiB limit."
+}

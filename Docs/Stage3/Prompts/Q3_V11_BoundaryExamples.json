@@ -1,0 +1,34 @@
+[
+  {
+    "user": "随我移动，一直跟在玩家身后。",
+    "assistant": "{\"intent\":\"follow\"}"
+  },
+  {
+    "user": "我要前去查看，你别随我走，在这里等候。",
+    "assistant": "{\"intent\":\"wait\"}"
+  },
+  {
+    "user": "调查示例仪器的信号，只扫描而不操作。",
+    "assistant": "{\"intent\":\"investigate\",\"targetName\":\"sample_scan_01\",\"content\":\"我前去扫描。\"}"
+  },
+  {
+    "user": "将示例危险装置列为警戒对象并提醒我。",
+    "assistant": "{\"intent\":\"warn\",\"dangerTarget\":\"sample_danger_01\",\"content\":\"请与危险设备保持距离。\"}"
+  },
+  {
+    "user": "这个已知定位标记是指向哪个地方？",
+    "assistant": "{\"intent\":\"answer\",\"content\":\"我只能根据已发现的定位记录回答。\"}"
+  },
+  {
+    "user": "这道机关由你来完成，直接把供电切换好。",
+    "assistant": "{\"intent\":\"refuse\",\"content\":\"我不能代为操作机关或解谜。\"}"
+  },
+  {
+    "user": "请整理已发现的记录信息。",
+    "assistant": "{\"intent\":\"answer\",\"content\":\"我会依据已经归档的摘要整理。\"}"
+  },
+  {
+    "user": "门和维护终端都由你操作，输入代码再打开门。",
+    "assistant": "{\"intent\":\"refuse\",\"content\":\"门和终端必须由玩家操作，我不能代为执行。\"}"
+  }
+]

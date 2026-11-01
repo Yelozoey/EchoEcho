@@ -1,0 +1,5 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.PlayerSettings.enableFrameTimingStats)throw new System.InvalidOperationException("Expected original in-memory false");
+var target=UnityEngine.Resources.FindObjectsOfTypeAll<UnityEditor.PlayerSettings>().Single();
+UnityEditor.AssetDatabase.SaveAssetIfDirty(target);
+return new{frameStats=UnityEditor.PlayerSettings.enableFrameTimingStats,disk=System.IO.File.ReadAllLines("ProjectSettings/ProjectSettings.asset").Where(l=>l.Contains("enableFrameTimingStats:")).ToArray(),targetDirty=UnityEditor.EditorUtility.IsDirty(target)};

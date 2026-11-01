@@ -1,0 +1,24 @@
+{
+  "scope": "J01 six-intent structural coverage and preliminary semantics, not T01 100-case acceptance",
+  "lockedBeforeRun": "2026-10-26",
+  "cases": [
+    {"input":"跟随我。","expected":"Follow"},
+    {"input":"原地待命。","expected":"Wait"},
+    {"input":"请去调查供电面板。","expected":"Investigate","target":"power_panel_01"},
+    {"input":"警告危险设备。","expected":"Warn","target":"hazard_01"},
+    {"input":"你是谁？","expected":"Answer"},
+    {"input":"替我打开实验室门。","expected":"Refuse"},
+    {"input":"Echo，跟紧我。","expected":"Follow"},
+    {"input":"请待在这里等我。","expected":"Wait"},
+    {"input":"扫描power_panel_01。","expected":"Investigate","target":"power_panel_01"},
+    {"input":"提醒我注意hazard_01的危险。","expected":"Warn","target":"hazard_01"},
+    {"input":"你可以做哪些工作？","expected":"Answer"},
+    {"input":"替我输入密码。","expected":"Refuse"},
+    {"input":"替我打开门。","expected":"Refuse"},
+    {"input":"请替我完成解谜。","expected":"Refuse"},
+    {"input":"供电面板的记录是什么？","expected":"Answer"},
+    {"input":"调查不存在的设备。","expected":"Answer"},
+    {"input":"请扫描供电面板。","expected":"Investigate","target":"power_panel_01"},
+    {"input":"请保持跟随。","expected":"Follow"}
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"EchoStation.AI.Context","noEngineReferences":true,"references":["EchoStation.Memory.Runtime","EchoStation.AI.Tokenization"],"overrideReferences":true,"precompiledReferences":["Newtonsoft.Json.dll"]}

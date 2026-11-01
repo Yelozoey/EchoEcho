@@ -1,0 +1,17 @@
+{
+  "name": "EchoStation.World.Editor.Tests",
+  "references": [
+    "EchoStation.World.Editor",
+    "EchoStation.Rendering.Editor",
+    "EchoStation.Rendering.TestFixture",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.World.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

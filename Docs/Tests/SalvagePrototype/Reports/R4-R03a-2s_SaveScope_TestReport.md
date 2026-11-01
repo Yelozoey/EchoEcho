@@ -1,0 +1,9 @@
+# R4-R03a-2s SDK保存范围保护
+
+2026-10-30，SaveScope_A1/1，1.141秒，前后场景/渲染/Console门禁通过。
+
+实际调用官方AddressableAssetSettings.Create（内含SaveAssets），自有Owned探针和SDK配置可保存；同轮新建外部GUID占位资产保持磁盘原Value1、内存Value2和dirty标记，回执明确记录其保存请求被阻止。全部ProjectSettings字节前后相同。嵌套scope拒绝；退出恢复正常保存回调，测试只删除本轮GUID探针/文件夹，没有处理用户资产。
+
+保护使用AssetModificationProcessor临时限定SalvageNext路径，保留外部脏对象引用与dirty状态；未知脏ProjectSettings先拒绝。SDK未改动。后续正式设置映射只可显式放行EditorBuildSettings并核对原场景列表，构建scope不放行其他项目设置。
+
+此项证明保存隔离，不代表Addressables Bundle或房间流送通过。

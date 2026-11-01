@@ -1,0 +1,1 @@
+{"name":"EchoStation.Puzzles.Editor.Tests","includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"references":["EchoStation.Puzzles.Runtime","EchoStation.Story.Runtime"]}

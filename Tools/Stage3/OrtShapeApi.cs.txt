@@ -1,0 +1,1 @@
+return new {shape=typeof(Microsoft.ML.OnnxRuntime.OrtTensorTypeAndShapeInfo).GetProperties().Select(p=>p.ToString()).ToArray(),interfaces=typeof(Microsoft.ML.OnnxRuntime.OrtTensorTypeAndShapeInfo).GetInterfaces().Select(t=>t.FullName).ToArray()};

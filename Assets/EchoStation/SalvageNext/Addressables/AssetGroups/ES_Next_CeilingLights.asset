@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ES_Next_CeilingLights
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: ES_Next_CeilingLights
+  m_GUID: 00be0ce8af7226c45be2d221c6d7667f
+  m_SerializeEntries:
+  - m_GUID: 1061478eb772d2e4b8a7805484211709
+    m_Address: es-next-ES_Next_CeilingLamp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13af56c117767a34bb39539c04c70b1d
+    m_Address: es-next-ES_Next_CeilingLamp_Light
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c04bf53e33f10f4bb89b959286e67ca
+    m_Address: es-next-ES_Next_CeilingLamp_Body
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 441acf757ced17347842b42bd5f9ec10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 12f0ec855f0756b45af452075dac3934, type: 2}
+    - {fileID: 11400000, guid: cb8549e0b4f76ef49940ecd41195e880, type: 2}

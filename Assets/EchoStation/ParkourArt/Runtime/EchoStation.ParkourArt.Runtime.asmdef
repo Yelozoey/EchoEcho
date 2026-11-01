@@ -1,0 +1,4 @@
+{
+  "name": "EchoStation.ParkourArt.Runtime",
+  "references": ["EchoStation.Player.Runtime", "Unity.InputSystem", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"]
+}

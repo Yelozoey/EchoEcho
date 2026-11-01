@@ -1,0 +1,1 @@
+{"name":"EchoStation.L02.Service","noEngineReferences":true,"references":["EchoStation.L02.Domain","EchoStation.L01.Domain","EchoStation.AI.Inference","EchoStation.AI.Context","EchoStation.AI.IntentJson","EchoStation.AI.Tokenization"]}

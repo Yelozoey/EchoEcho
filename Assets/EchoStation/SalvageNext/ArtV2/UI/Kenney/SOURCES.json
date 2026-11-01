@@ -1,0 +1,68 @@
+{
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "output": "Panel.png",
+      "sourceFile": "PNG/Grey/Default/button_square_header_small_rectangle.png",
+      "source": "https://kenney.nl/assets/ui-pack-sci-fi",
+      "sha256": "f2ee7bb47948971c81b7e1e5ea64b453378b419e90c19330edeab71f4e0475a1",
+      "bytes": 424
+    },
+    {
+      "output": "Button.png",
+      "sourceFile": "PNG/Grey/Default/bar_square_large.png",
+      "source": "https://kenney.nl/assets/ui-pack-sci-fi",
+      "sha256": "061c6415178c9b6be2966521e56c51a61d3fd55e1f35f2da5424bf21a26ea868",
+      "bytes": 205
+    },
+    {
+      "output": "Crosshair.png",
+      "sourceFile": "PNG/Light/crosshair-000.png",
+      "source": "https://kenney.nl/assets/crosshair-pack",
+      "sha256": "366c58e91eb4af07f987d78a50a5b4e964523849d1a90dbd183777ff3a05d041",
+      "bytes": 147
+    },
+    {
+      "output": "E.png",
+      "sourceFile": "Keyboard & Mouse/Default/keyboard_e.png",
+      "source": "https://kenney.nl/assets/input-prompts",
+      "sha256": "1008502780281c8c2e06bebbc477a60f485d2260072b04611fbd294340f266d7",
+      "bytes": 242
+    },
+    {
+      "output": "G.png",
+      "sourceFile": "Keyboard & Mouse/Default/keyboard_g.png",
+      "source": "https://kenney.nl/assets/input-prompts",
+      "sha256": "93b9c2122890824b0780501f052473e5f3f8c3fb998638540c857b14df60f0d8",
+      "bytes": 391
+    },
+    {
+      "output": "R.png",
+      "sourceFile": "Keyboard & Mouse/Default/keyboard_r.png",
+      "source": "https://kenney.nl/assets/input-prompts",
+      "sha256": "153d158ec02c5b40cdded08fbf74389d1713fadf5b22029e77f2c518dd4c4973",
+      "bytes": 341
+    },
+    {
+      "output": "TAB.png",
+      "sourceFile": "Keyboard & Mouse/Default/keyboard_tab.png",
+      "source": "https://kenney.nl/assets/input-prompts",
+      "sha256": "2a759f1f70edb9fd8b1464098def1b096831e128d7b312eead7a3ba39870393f",
+      "bytes": 331
+    },
+    {
+      "output": "F.png",
+      "sourceFile": "Keyboard & Mouse/Default/keyboard_f.png",
+      "source": "https://kenney.nl/assets/input-prompts",
+      "sha256": "f22179ebd67f153dadc524e12bde0997078ded09bbaba545c37cd1bd86b84331",
+      "bytes": 242
+    },
+    {
+      "output": "T.png",
+      "sourceFile": "Keyboard & Mouse/Default/keyboard_t.png",
+      "source": "https://kenney.nl/assets/input-prompts",
+      "sha256": "f7414b680d13c89c1b41174f29c79ce292167767aefa47b856fa99ef83ef32cc",
+      "bytes": 241
+    }
+  ]
+}

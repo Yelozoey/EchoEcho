@@ -1,0 +1,5 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.EditorApplication.isUpdating||UnityEditor.BuildPipeline.isBuildingPlayer)throw new System.InvalidOperationException("Editor busy");
+var loaded=System.AppDomain.CurrentDomain.GetAssemblies().Any(a=>a.GetName().Name.StartsWith("Unity.Barracuda",System.StringComparison.Ordinal));
+if(loaded)throw new System.InvalidOperationException("Barracuda importer still loaded; do not install ONNX yet");
+return new {barracudaLoaded=loaded,clean=true,idle=true,utc=System.DateTime.UtcNow.ToString("O")};

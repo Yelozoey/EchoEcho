@@ -1,0 +1,13 @@
+{
+  "name": "EchoStation.Player.Runtime",
+  "references": [
+    "Unity.InputSystem",
+    "EchoStation.World.Runtime",
+    "EchoStation.Rendering.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "UnityEngine.UI",
+    "EchoStation.Echo.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Dialogue.Runtime"
+  ]
+}

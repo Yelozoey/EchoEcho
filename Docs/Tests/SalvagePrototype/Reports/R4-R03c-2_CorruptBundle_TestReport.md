@@ -1,0 +1,9 @@
+# R4-R03c-2 隔离坏包与失败恢复
+
+2026-10-30，BadBundle_B1/1、5.516秒。首次A在编辑器脚本域重载时安全门禁停止，未派发测试；恢复就绪/Console0后B通过。
+
+只把官方room0 Bundle的运行时InternalId临时映射到Library自有目录4096字节无效文件，真实走AssetBundle.LoadFromFileAsync和官方SceneProvider，未改实际cache或SDK。失败一次：commit0、无呈现、失败句柄立即释放；恢复原路径后限频重试成功commit1，最后liveHandles0/Bundle0，pump回收完成。原包SHA前后均362e1fc98e20451e4b47b7348b4c112cc28acfd11f6a238256351828ac278119。
+
+SDK异常handler仅记录引用隔离坏文件的3个预期提供者异常，其他异常转交原handler并使测试失败；原handler与InternalIdTransform委托引用精确恢复。没有全局忽略日志。原生引擎的两条header/read-data错误已核对只指向该隔离文件，完整归档ExpectedNativeFaultConsole_B.json后才清理Console测试缓存；不是把产品错误清除后说成功。
+
+R03c-1连续压力与c-2错误恢复均通过，进入P01。仍非最终Windows/目标硬件性能/外部首次试玩验收。

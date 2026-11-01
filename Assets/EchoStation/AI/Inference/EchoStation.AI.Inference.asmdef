@@ -1,0 +1,1 @@
+{"name":"EchoStation.AI.Inference","noEngineReferences":true,"references":["EchoStation.AI.Models","EchoStation.AI.Tokenization","EchoStation.AI.Context","EchoStation.Memory.Runtime"],"overrideReferences":true,"precompiledReferences":["Microsoft.ML.OnnxRuntime.dll"]}

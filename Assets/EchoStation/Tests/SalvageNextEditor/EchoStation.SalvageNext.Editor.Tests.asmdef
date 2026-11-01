@@ -1,0 +1,40 @@
+{
+  "name": "EchoStation.SalvageNext.Editor.Tests",
+  "references": [
+    "Unity.AI.Navigation",
+    "Unity.Addressables",
+    "Unity.Addressables.Editor",
+    "Unity.ResourceManager",
+    "EchoStation.SalvageNext.Domain",
+    "EchoStation.SalvageNext.Runtime",
+    "EchoStation.SalvageNext.Editor",
+    "EchoStation.Salvage.Runtime",
+    "EchoStation.Salvage.Editor",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Memory.Runtime",
+    "EchoStation.AI.Context",
+    "EchoStation.AI.Models",
+    "EchoStation.AI.Tokenization",
+    "EchoStation.AI.IntentJson",
+    "EchoStation.AI.Inference",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Dialogue.Runtime",
+    "UnityEngine.UI",
+    "Unity.InputSystem",
+    "EchoStation.Rendering.Runtime",
+    "EchoStation.Rendering.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll",
+    "Newtonsoft.Json.dll"
+  ]
+}

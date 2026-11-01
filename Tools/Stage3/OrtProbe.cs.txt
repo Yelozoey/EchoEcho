@@ -1,0 +1,4 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+var root=System.IO.Path.GetFullPath(".");
+var thread=EchoStation.AI.Probe.OrtCompatibilityProbe.Start(System.IO.Path.Combine(root,"Library/EchoStation/S3Cache/models/qwen-int4/onnx/model_q4.onnx"),System.IO.Path.Combine(root,"Docs/Tests/Stage3/Evidence/S3-G01/PrefillFixture.json"),System.IO.Path.Combine(root,"Docs/Tests/Stage3/Evidence/S3-G01"),System.IO.Path.Combine(root,"Docs/Tests/Stage3/Evidence/S3-G01/UnityOrt_Q4_A01.json"),System.Threading.Thread.CurrentThread.ManagedThreadId);
+return new {started=true,thread=thread.ManagedThreadId,main=System.Threading.Thread.CurrentThread.ManagedThreadId};

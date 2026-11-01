@@ -1,0 +1,357 @@
+{
+  "scope": "Actual Unity module results, sanitized public summary; full raw MCP receipts remain local",
+  "runs": [
+    {
+      "run": "F01_A",
+      "summary": {
+        "total": 21,
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 12.6222466,
+        "resultState": "Passed"
+      },
+      "cases": [
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.ActualMajorObjectsHaveSourceMeshesAndOwnedPbrMaterials",
+          "state": "Passed",
+          "durationSeconds": 0.4539598
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.AdministrativeAndCargoScreensActuallyOccludeStandingSightlines",
+          "state": "Passed",
+          "durationSeconds": 0.0779669
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.CoreObservationWindowIsTransparentAndHasActualSafeCollision",
+          "state": "Passed",
+          "durationSeconds": 0.3785278
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.FiveRoutePreviewsAndLegibleWorldSignsExistAsClearlyLabeledArt",
+          "state": "Passed",
+          "durationSeconds": 0.0752596
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.FourRealRobotsHaveTwoStaticAndTwoFuturePatrolPostsWithoutAiComponents",
+          "state": "Passed",
+          "durationSeconds": 0.0787165
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDecorationTests.AdaptedPropsHaveReadableScaleAtlasesUvAndActualObstacleContracts",
+          "state": "Passed",
+          "durationSeconds": 0.0926227
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDecorationTests.OldSceneAndPrivateRendererRemainSeparateWithoutNewGameplay",
+          "state": "Passed",
+          "durationSeconds": 0.0747906
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDecorationTests.SeventyEightRealDetailsCoverAllSixZonesWithTenKinds",
+          "state": "Passed",
+          "durationSeconds": 0.0861728
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ActualFloorAndConservativeFreeAreaExceedNineSampleRooms",
+          "state": "Passed",
+          "durationSeconds": 0.0931584
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.BothPhysicalLoopsHaveCompleteGroundNavigation(0)",
+          "state": "Passed",
+          "durationSeconds": 0.0782646
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.BothPhysicalLoopsHaveCompleteGroundNavigation(1)",
+          "state": "Passed",
+          "durationSeconds": 0.0711837
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.BoundPlayerInputMovesLooksAndRespectsEscapeAndClick",
+          "state": "Passed",
+          "durationSeconds": 8.7595526
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.PortalCentersAreClearAndOuterWallsStopStandingPlayerHeightRays",
+          "state": "Passed",
+          "durationSeconds": 0.1152204
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.RealControllerTraversesEveryRouteAndBothLoopsWithoutTeleportingBetweenWaypoints",
+          "state": "Passed",
+          "durationSeconds": 0.1303216
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ThreeDistinctWaypointRoutesHaveCompleteGroundNavigation(0)",
+          "state": "Passed",
+          "durationSeconds": 0.0751207
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ThreeDistinctWaypointRoutesHaveCompleteGroundNavigation(1)",
+          "state": "Passed",
+          "durationSeconds": 0.072915
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ThreeDistinctWaypointRoutesHaveCompleteGroundNavigation(2)",
+          "state": "Passed",
+          "durationSeconds": 0.0753045
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.MainFloorsAndScreenGlassLampRubberRemainOutsideCoating",
+          "state": "Passed",
+          "durationSeconds": 0.1270841
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.OwnedVariantsSplitSharedAtlasesAndCoverPaintedSurfaces",
+          "state": "Passed",
+          "durationSeconds": 0.1013935
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.PaintIsActualNonmetalWithDerivedAtlasAndUnchangedDetailMaps",
+          "state": "Passed",
+          "durationSeconds": 0.2002952
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.ProtectedSurfacesKeepOriginalValuesAndRobotPalette",
+          "state": "Passed",
+          "durationSeconds": 0.1226886
+        }
+      ]
+    },
+    {
+      "run": "F02_A",
+      "summary": {
+        "total": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 13.7676113,
+        "resultState": "Passed"
+      },
+      "cases": [
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatFogTests.ActualFogIsHalfResolutionAndWallsAttenuateDirectionalScattering",
+          "state": "Passed",
+          "durationSeconds": 5.7480767
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatFogTests.FieldSkipsDisabledZeroDensityDistantAndBackwardViews",
+          "state": "Passed",
+          "durationSeconds": 0.3922037
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatFogTests.GenericFieldHasThreeLocalVolumesAndOnlyItsCameraOptIn",
+          "state": "Passed",
+          "durationSeconds": 0.0817394
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLightingTests.ActualBakeHasMapsBoundToStaticGeometryAndProbesForAllFourRobots",
+          "state": "Passed",
+          "durationSeconds": 0.0869915
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLightingTests.BakedLightingAoAndReflectionsChangeActualRenderedPixels",
+          "state": "Passed",
+          "durationSeconds": 1.5533142
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLightingTests.EightOfflineReflectionBakesArePersistedAsLocalCustomCubemaps",
+          "state": "Passed",
+          "durationSeconds": 0.1196873
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLightingTests.LightBudgetAndCompletedBakeReceiptMatchActualScene",
+          "state": "Passed",
+          "durationSeconds": 0.0772789
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLightingTests.OwnedPipelineIsOrdinaryForwardHdrWithActualSsaoAndAces",
+          "state": "Passed",
+          "durationSeconds": 0.0724466
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatPlanarTests.ActualPlaneChangesPixelsUpdatesAndReleasesItsOwnResources",
+          "state": "Passed",
+          "durationSeconds": 2.0575325
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatPlanarTests.SinglePatchAndAuxiliaryRendererKeepMainEffectsAndGameplayGeometrySeparate",
+          "state": "Passed",
+          "durationSeconds": 0.1102842
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatViewTests.ThreeActualViewsExposeCoatedSurfacesAndRoutes",
+          "state": "Passed",
+          "durationSeconds": 2.3261763
+        }
+      ]
+    },
+    {
+      "run": "F03_B",
+      "summary": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 25.632808,
+        "resultState": "Passed"
+      },
+      "cases": [
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDeliveryTests.JumpRouteToggleFourAuthoredIdleLoopsAndNoAi",
+          "state": "Passed",
+          "durationSeconds": 12.6166438
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLabelTests.FourInspectionMarksUseDarkInkAndKeepTheirContent",
+          "state": "Passed",
+          "durationSeconds": 0.10215
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatPerformanceTests.Actual1080pGpuSamplesComparePlanarOnAndOff",
+          "state": "Passed",
+          "durationSeconds": 11.8147323
+        }
+      ]
+    },
+    {
+      "run": "Final_A",
+      "summary": {
+        "total": 25,
+        "passed": 25,
+        "failed": 0,
+        "skipped": 0,
+        "durationSeconds": 22.2448534,
+        "resultState": "Passed"
+      },
+      "cases": [
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.ActualMajorObjectsHaveSourceMeshesAndOwnedPbrMaterials",
+          "state": "Passed",
+          "durationSeconds": 0.1634809
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.AdministrativeAndCargoScreensActuallyOccludeStandingSightlines",
+          "state": "Passed",
+          "durationSeconds": 0.0762575
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.CoreObservationWindowIsTransparentAndHasActualSafeCollision",
+          "state": "Passed",
+          "durationSeconds": 0.0754449
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.FiveRoutePreviewsAndLegibleWorldSignsExistAsClearlyLabeledArt",
+          "state": "Passed",
+          "durationSeconds": 0.0759856
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatArtTests.FourRealRobotsHaveTwoStaticAndTwoFuturePatrolPostsWithoutAiComponents",
+          "state": "Passed",
+          "durationSeconds": 0.0793055
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDecorationTests.AdaptedPropsHaveReadableScaleAtlasesUvAndActualObstacleContracts",
+          "state": "Passed",
+          "durationSeconds": 0.0959385
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDecorationTests.OldSceneAndPrivateRendererRemainSeparateWithoutNewGameplay",
+          "state": "Passed",
+          "durationSeconds": 0.0829402
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDecorationTests.SeventyEightRealDetailsCoverAllSixZonesWithTenKinds",
+          "state": "Passed",
+          "durationSeconds": 0.1001017
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatDeliveryTests.JumpRouteToggleFourAuthoredIdleLoopsAndNoAi",
+          "state": "Passed",
+          "durationSeconds": 3.3187651
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLabelTests.FourInspectionMarksUseDarkInkAndKeepTheirContent",
+          "state": "Passed",
+          "durationSeconds": 0.0952967
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ActualFloorAndConservativeFreeAreaExceedNineSampleRooms",
+          "state": "Passed",
+          "durationSeconds": 0.0938308
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.BothPhysicalLoopsHaveCompleteGroundNavigation(0)",
+          "state": "Passed",
+          "durationSeconds": 0.0806901
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.BothPhysicalLoopsHaveCompleteGroundNavigation(1)",
+          "state": "Passed",
+          "durationSeconds": 0.0709581
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.BoundPlayerInputMovesLooksAndRespectsEscapeAndClick",
+          "state": "Passed",
+          "durationSeconds": 1.7834305
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.PortalCentersAreClearAndOuterWallsStopStandingPlayerHeightRays",
+          "state": "Passed",
+          "durationSeconds": 0.1109662
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.RealControllerTraversesEveryRouteAndBothLoopsWithoutTeleportingBetweenWaypoints",
+          "state": "Passed",
+          "durationSeconds": 0.1148618
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ThreeDistinctWaypointRoutesHaveCompleteGroundNavigation(0)",
+          "state": "Passed",
+          "durationSeconds": 0.0705661
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ThreeDistinctWaypointRoutesHaveCompleteGroundNavigation(1)",
+          "state": "Passed",
+          "durationSeconds": 0.0707931
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatLayoutTests.ThreeDistinctWaypointRoutesHaveCompleteGroundNavigation(2)",
+          "state": "Passed",
+          "durationSeconds": 0.0709195
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.MainFloorsAndScreenGlassLampRubberRemainOutsideCoating",
+          "state": "Passed",
+          "durationSeconds": 0.1157082
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.OwnedVariantsSplitSharedAtlasesAndCoverPaintedSurfaces",
+          "state": "Passed",
+          "durationSeconds": 0.1132431
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.PaintIsActualNonmetalWithDerivedAtlasAndUnchangedDetailMaps",
+          "state": "Passed",
+          "durationSeconds": 0.1704616
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatMaterialTests.ProtectedSurfacesKeepOriginalValuesAndRobotPalette",
+          "state": "Passed",
+          "durationSeconds": 0.1471997
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatPerformanceTests.Actual1080pGpuSamplesComparePlanarOnAndOff",
+          "state": "Passed",
+          "durationSeconds": 11.6947314
+        },
+        {
+          "name": "EchoStation.InfiltrationCoated.Tests.CoatViewTests.ThreeActualViewsExposeCoatedSurfacesAndRoutes",
+          "state": "Passed",
+          "durationSeconds": 2.9797596
+        }
+      ]
+    }
+  ]
+}

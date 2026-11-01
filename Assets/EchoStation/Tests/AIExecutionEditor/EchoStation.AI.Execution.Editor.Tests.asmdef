@@ -1,0 +1,38 @@
+{
+  "name": "EchoStation.AI.Execution.Editor.Tests",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "references": [
+    "EchoStation.AI.Authorization",
+    "EchoStation.AI.Execution",
+    "EchoStation.AI.Context",
+    "EchoStation.AI.IntentJson",
+    "EchoStation.Dialogue.Runtime",
+    "EchoStation.Dialogue.Commands",
+    "EchoStation.Dialogue.Knowledge",
+    "EchoStation.Dialogue.Integration",
+    "EchoStation.Player.Runtime",
+    "EchoStation.World.Runtime",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.Memory.Runtime",
+    "EchoStation.Memory.Integration",
+    "EchoStation.Player.Editor.Tests",
+    "EchoStation.Rendering.TestFixture",
+    "Unity.InputSystem",
+    "UnityEngine.UI",
+    "EchoStation.AI.Presentation",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "EchoStation.AI.GameIntegration",
+    "EchoStation.Station.Editor.Tests",
+    "EchoStation.Station.Runtime",
+    "EchoStation.Story.Runtime",
+    "EchoStation.AI.Inference",
+    "EchoStation.Puzzles.Runtime",
+    "EchoStation.Persistence.Runtime",
+    "Unity.AI.Navigation"
+  ]
+}

@@ -1,0 +1,2 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+int count=0;EchoStation.InfiltrationCoated.Editor.CoatScene.Edit(root=>{foreach(var text in root.GetComponentsInChildren<UnityEngine.TextMesh>().Where(t=>t.name.StartsWith("PostLabel_",System.StringComparison.Ordinal))){text.color=new UnityEngine.Color(.055f,.085f,.12f,1);count++;}});if(count!=4)throw new System.InvalidOperationException("Expected four post labels");return new {updated=count};

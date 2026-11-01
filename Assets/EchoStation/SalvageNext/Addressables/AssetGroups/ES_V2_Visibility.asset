@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ES_V2_Visibility
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: ES_V2_Visibility
+  m_GUID: d2b6fe6d6e7d444439430f73564c1126
+  m_SerializeEntries:
+  - m_GUID: 5343fdd991ae86f4b94c3cd8b14f0c6d
+    m_Address: es-v2-visibility
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 441acf757ced17347842b42bd5f9ec10, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2990f2dc5bf2ac24bad59b6a1b316ede, type: 2}
+    - {fileID: 11400000, guid: bef382c325948934b974a4bd4848be0f, type: 2}

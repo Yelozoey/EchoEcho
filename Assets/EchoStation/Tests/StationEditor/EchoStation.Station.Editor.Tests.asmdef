@@ -1,0 +1,34 @@
+{
+  "name": "EchoStation.Station.Editor.Tests",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "references": [
+    "EchoStation.Station.Runtime",
+    "EchoStation.Story.Runtime",
+    "EchoStation.Memory.Runtime",
+    "EchoStation.Dialogue.Runtime",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.World.Runtime",
+    "EchoStation.Rendering.Runtime",
+    "EchoStation.Rendering.TestFixture",
+    "EchoStation.Player.Editor.Tests",
+    "Unity.AI.Navigation",
+    "Unity.InputSystem",
+    "UnityEngine.UI",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "EchoStation.Memory.Integration",
+    "EchoStation.World.Editor",
+    "EchoStation.Rendering.Editor",
+    "EchoStation.Puzzles.Runtime",
+    "EchoStation.Dialogue.Commands",
+    "EchoStation.Dialogue.Integration",
+    "EchoStation.Dialogue.Knowledge",
+    "EchoStation.Persistence.Runtime",
+    "EchoStation.Player.TestFixture"
+  ]
+}

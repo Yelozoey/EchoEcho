@@ -1,0 +1,6 @@
+{
+  "name": "EchoStation.ParkourArt.Editor.Tests",
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "references": ["EchoStation.ParkourArt.Runtime", "EchoStation.ParkourArt.Editor", "EchoStation.Player.Runtime", "EchoStation.Player.Editor.Tests", "Unity.InputSystem", "EchoStation.Rendering.Editor", "EchoStation.Rendering.TestFixture", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"]
+}

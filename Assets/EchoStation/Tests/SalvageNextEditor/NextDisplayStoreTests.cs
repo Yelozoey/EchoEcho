@@ -1,0 +1,23 @@
+using System;
+using System.IO;
+using Newtonsoft.Json.Linq;
+using NUnit.Framework;
+namespace EchoStation.SalvageNext.Tests
+{
+    public sealed class NextDisplayStoreTests
+    {
+        DisplaySettingsStore Store()=>new DisplaySettingsStore(Path.GetFullPath("Library/EchoStation/SalvageNext/DisplayStore_"+Guid.NewGuid().ToString("N")));
+        [Test]public void ThreeModesAndQualitiesRoundTripAndDefaultIs1080pWindowedMedium()
+        {foreach(DisplayWindowMode mode in Enum.GetValues(typeof(DisplayWindowMode)))foreach(RecoveryQuality quality in Enum.GetValues(typeof(RecoveryQuality))){var data=new DisplaySelection(quality,1600,900,mode);Assert.That(DisplaySettingsStore.Decode(DisplaySettingsStore.Encode(data)),Is.EqualTo(data));}Assert.That(DisplaySelection.Default(),Is.EqualTo(new DisplaySelection(RecoveryQuality.Medium,1920,1080,DisplayWindowMode.Windowed)));}
+        [TestCase(639,1080)][TestCase(3841,1080)][TestCase(1920,479)][TestCase(1920,2161)]public void OutOfBudgetDimensionsAreRejected(int width,int height){Assert.Throws<ArgumentException>(()=>new DisplaySelection(RecoveryQuality.Medium,width,height,DisplayWindowMode.Windowed));}
+        [Test]public void InvalidEnumsAreRejected(){Assert.Throws<ArgumentException>(()=>new DisplaySelection((RecoveryQuality)9,1920,1080,DisplayWindowMode.Windowed));Assert.Throws<ArgumentException>(()=>new DisplaySelection(RecoveryQuality.Medium,1920,1080,(DisplayWindowMode)9));}
+        [Test]public void StrictDecodeRejectsDuplicatesUnknownTypesTrailingCommentsAndTamper()
+        {string valid=DisplaySettingsStore.Encode(DisplaySelection.Default());Assert.Catch(()=>DisplaySettingsStore.Decode(valid.Replace("\"version\":1","\"version\":1,\"version\":1")));Assert.Catch(()=>DisplaySettingsStore.Decode(valid+"{}"));Assert.Catch(()=>DisplaySettingsStore.Decode("/*x*/"+valid));Assert.Catch(()=>DisplaySettingsStore.Decode(valid.Replace("\"width\":1920","\"width\":1600")));Assert.Catch(()=>DisplaySettingsStore.Decode(valid.Replace("\"quality\":1","\"quality\":\"1\"")));Assert.Catch(()=>DisplaySettingsStore.Decode(valid.Replace("\"version\":1","\"version\":1,\"extra\":0")));Assert.Catch(()=>DisplaySettingsStore.Decode(new string('x',4097)));}
+        [Test]public void AtomicWritesBackupAndDoNotTouchGameSlot()
+        {var store=Store();Directory.CreateDirectory(Path.GetDirectoryName(store.Primary));string slot=Path.Combine(Path.GetDirectoryName(store.Primary),"slot1.json");File.WriteAllText(slot,"owned-game-slot-sentinel");Assert.That(store.TryWrite(DisplaySelection.Default(),out _),Is.True);var next=new DisplaySelection(RecoveryQuality.Low,1280,720,DisplayWindowMode.Borderless);Assert.That(store.TryWrite(next,out _),Is.True);Assert.That(store.TryRead(out var read,out _),Is.True);Assert.That(read,Is.EqualTo(next));Assert.That(DisplaySettingsStore.Decode(File.ReadAllText(store.Backup)),Is.EqualTo(DisplaySelection.Default()));Assert.That(File.Exists(store.Primary+".tmp"),Is.False);Assert.That(File.ReadAllText(slot),Is.EqualTo("owned-game-slot-sentinel"));}
+        [Test]public void CorruptPrimaryFallsBackWithoutRepairAndFutureVersionNeverFallsBackOrOverwrites()
+        {var store=Store();Assert.That(store.TryWrite(DisplaySelection.Default(),out _),Is.True);Assert.That(store.TryWrite(new DisplaySelection(RecoveryQuality.High,1920,1080,DisplayWindowMode.Exclusive),out _),Is.True);File.WriteAllText(store.Primary,"broken");Assert.That(store.TryRead(out var read,out _),Is.True);Assert.That(read,Is.EqualTo(DisplaySelection.Default()));Assert.That(File.ReadAllText(store.Primary),Is.EqualTo("broken"));string future=DisplaySettingsStore.Encode(DisplaySelection.Default()).Replace("\"version\":1","\"version\":2");File.WriteAllText(store.Primary,future);Assert.That(store.TryRead(out _,out _),Is.False);Assert.That(store.TryWrite(DisplaySelection.Default(),out _),Is.False);Assert.That(File.ReadAllText(store.Primary),Is.EqualTo(future));}
+        [Test]public void InvalidOnlyDataAndStaleTemporaryFilesArePreserved()
+        {var store=Store();Directory.CreateDirectory(Path.GetDirectoryName(store.Primary));File.WriteAllText(store.Primary,"broken");Assert.That(store.TryWrite(DisplaySelection.Default(),out _),Is.False);Assert.That(File.ReadAllText(store.Primary),Is.EqualTo("broken"));var other=Store();Directory.CreateDirectory(Path.GetDirectoryName(other.Primary));File.WriteAllText(other.Primary+".tmp","partial");Assert.That(other.TryWrite(DisplaySelection.Default(),out _),Is.False);Assert.That(File.ReadAllText(other.Primary+".tmp"),Is.EqualTo("partial"));Assert.That(File.Exists(other.Primary),Is.False);}
+    }
+}

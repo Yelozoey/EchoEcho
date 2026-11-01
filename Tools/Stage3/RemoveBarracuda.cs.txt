@@ -1,0 +1,4 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.EditorApplication.isUpdating||UnityEditor.BuildPipeline.isBuildingPlayer)throw new System.InvalidOperationException("Editor busy");
+var request=UnityEditor.PackageManager.Client.Remove("com.unity.barracuda");
+return new {requested="remove unused Barracuda after actual No-Go",completed=request.IsCompleted};

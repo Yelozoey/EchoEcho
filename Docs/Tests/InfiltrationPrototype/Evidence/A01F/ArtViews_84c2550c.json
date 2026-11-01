@@ -1,0 +1,23 @@
+[
+  {
+    "view": 0,
+    "meanLinear": 0.34080132939743724,
+    "path": "Docs/Tests/InfiltrationPrototype/Evidence/A01F/ArtView_0_84c2550c.png",
+    "usesInheritedDressingBakeForM01Only": false,
+    "bakedFinalScene": true
+  },
+  {
+    "view": 1,
+    "meanLinear": 0.29462316596590432,
+    "path": "Docs/Tests/InfiltrationPrototype/Evidence/A01F/ArtView_1_84c2550c.png",
+    "usesInheritedDressingBakeForM01Only": false,
+    "bakedFinalScene": true
+  },
+  {
+    "view": 2,
+    "meanLinear": 0.24284135988547051,
+    "path": "Docs/Tests/InfiltrationPrototype/Evidence/A01F/ArtView_2_84c2550c.png",
+    "usesInheritedDressingBakeForM01Only": false,
+    "bakedFinalScene": true
+  }
+]

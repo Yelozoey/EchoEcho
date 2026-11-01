@@ -1,0 +1,1 @@
+{"name":"EchoStation.LLMShortTasks.Editor","references":["EchoStation.LLMShortTasks.Runtime","EchoStation.SalvageNext.Editor","EchoStation.Rendering.Editor","Unity.Addressables.Editor","Unity.RenderPipelines.Core.Runtime","Unity.RenderPipelines.Universal.Runtime"],"includePlatforms":["Editor"],"overrideReferences":true,"precompiledReferences":["Newtonsoft.Json.dll"]}

@@ -1,0 +1,9 @@
+{
+  "aoMeanAbsolute": 0.0054520238190889359,
+  "reflectionMeanAbsolute": 0.0093086687847971916,
+  "bakedLightingMeanAbsolute": 0.1316763162612915,
+  "width": 1920,
+  "height": 1080,
+  "animationsAndGrainDisabled": true,
+  "bakedTestIsTotalBakedContributionNotIsolatedIndirect": true
+}

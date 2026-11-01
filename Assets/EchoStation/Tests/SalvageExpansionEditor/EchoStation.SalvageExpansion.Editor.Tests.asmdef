@@ -1,0 +1,8 @@
+{
+  "name": "EchoStation.SalvageExpansion.Editor.Tests",
+  "references": ["EchoStation.SalvageExpansion.Domain", "EchoStation.SalvageExpansion.Runtime", "EchoStation.SalvageExpansion.Editor", "EchoStation.Player.Runtime", "EchoStation.Salvage.Runtime", "EchoStation.Player.Editor.Tests", "EchoStation.Echo.Runtime", "EchoStation.World.Runtime", "EchoStation.SalvageNext.Runtime", "EchoStation.SalvageNext.Domain", "Unity.AI.Navigation", "Unity.RenderPipelines.Core.Runtime", "UnityEngine.UI", "Unity.InputSystem"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll", "Newtonsoft.Json.dll"]
+}

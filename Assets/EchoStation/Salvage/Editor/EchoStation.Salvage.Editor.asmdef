@@ -1,0 +1,18 @@
+{
+  "name": "EchoStation.Salvage.Editor",
+  "rootNamespace": "EchoStation.Salvage.Editor",
+  "references": [
+    "EchoStation.Salvage.Runtime",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Rendering.Editor",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Echo.Runtime",
+    "Unity.AI.Navigation",
+    "EchoStation.World.Runtime",
+    "EchoStation.Rendering.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

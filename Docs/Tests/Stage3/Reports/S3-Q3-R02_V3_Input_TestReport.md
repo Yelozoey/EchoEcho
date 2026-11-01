@@ -1,0 +1,11 @@
+# Q3-R02 v3隔离输入
+
+2026-10-27。依赖R01已完成的真实输出复现/性能定位；用户已允许Prompt迭代。仅新增Prompts/Q3_V3_Contrast.txt，正式PromptTemplate/运行时模板仍v2，Qwen2.5不处理。
+
+prepare_qwen3_tuning.py实际退出0；同一18条输入/期望、原有摘要和允许目标均保留，仅替换规则正文及三个对照示例。官方HF本地Qwen3非思考模板，greedy/CPU2不变，输入465–500tokens，相比v2的564–599少99tokens；全部满足1536输入、256输出预留、2048上下文。
+
+完整Prompt SHA1d01f1e7e336e5f15ae05a919c822351f8aa08366c6784120979fd4bd288020c，Cases SHA16d38f047c99d87d88599540913e3e94ec4bf21a227597f74b2fedb41e6d0582。证据Tuning/V3_Contrast_A的Prompt.txt/Cases.json/Run.json，当前ActiveRun对应同一字节。模板要求两个占位各一次、LF、官方逐条编码与长度门禁均通过。
+
+本叶只证明输入准备完成；尚未说明语义改善。下一步完整真实18条输出，结构18/18、语义≥17/18，原始内容错误另列，不以脚本修正混算。
+
+后续隔离版本（2026-10-27）：v3的system包装输入473–516tokens；v4恢复六类示例并保留问题/未知目标对照，user包装517–552tokens。v4正文SHA2847a4e18d55ee309dc02ffa8c6d49e97e9d9f7d0075b832166ad5a1b1562e58，Cases SHAef2e7f5f71b328b57025cbfb3b41101c8c2240cfa77918a4c173c0def0b02d80。两个prepare命令实际退出0、各18条预算均通过，完整Run/Prompt/Cases分别留在V3_System_A和V4_Balanced_A。不据此宣称质量通过，真实结果另记R03报告；正式v2字节不改。

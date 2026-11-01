@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1a0b2b52c70ed43aaa215961bb78e5, type: 3}
+  m_Name: ES_P04_ProbeClue
+  m_EditorClassIdentifier: EchoStation.World.Runtime::EchoStation.World.ClueDefinition
+  uniqueId: prompt_window_fixture
+  title: "\u754C\u9762\u8BCA\u65AD\u7B14\u8BB0"
+  fullText: "\u8BE5\u6587\u672C\u53EA\u7528\u4E8E\u72EC\u7ACB\u754C\u9762\u6D4B\u8BD5\uFF0C\u4E0D\u5C5E\u4E8E\u6B63\u5F0F\u5267\u60C5\u3002"
+  summary: "\u754C\u9762\u6D4B\u8BD5\u6458\u8981\u3002"
+  kind: 0

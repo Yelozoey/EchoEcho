@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1a0b2b52c70ed43aaa215961bb78e5, type: 3}
+  m_Name: ES_terminal_data_01
+  m_EditorClassIdentifier: EchoStation.World.Runtime::EchoStation.World.ClueDefinition
+  uniqueId: terminal_data_01
+  title: "\u89C2\u6D4B\u6570\u636E\u7247\u6BB5"
+  fullText: "\u91C7\u6837\u5E8F\u521707\uFF1A\u6E29\u5EA6\u7A33\u5B9A\uFF0C\u7A7A\u6C14\u5FAE\u7C92\u6D53\u5EA6\u6301\u7EED\u7F13\u6162\u4E0A\u5347\u3002\u5F53\u524D\u8BB0\u5F55\u4E0D\u8DB3\u4EE5\u652F\u6301\u5355\u4E00\u4F9B\u7535\u6545\u969C\u7684\u89E3\u91CA\u3002\u9700\u8981\u7EE7\u7EED\u6838\u5BF9\u5176\u4ED6\u89C2\u5BDF\u8D44\u6599\u3002"
+  summary: "\u6E29\u5EA6\u7A33\u5B9A\u800C\u5FAE\u7C92\u6D53\u5EA6\u4E0A\u5347\uFF0C\u5355\u4E00\u4F9B\u7535\u6545\u969C\u89E3\u91CA\u4E0D\u8DB3\u3002"
+  kind: 1

@@ -1,0 +1,6 @@
+{
+  "name": "EchoStation.Dialogue.Knowledge.Editor.Tests",
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "references": ["EchoStation.Dialogue.Knowledge", "EchoStation.Dialogue.Commands", "EchoStation.Memory.Runtime", "EchoStation.Echo.Runtime"]
+}

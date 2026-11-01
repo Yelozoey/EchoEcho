@@ -1,0 +1,12 @@
+{
+  "fogDelta": 0.0213214736,
+  "shadowDelta": 0.0535345078,
+  "width": 960,
+  "height": 540,
+  "steps": 16,
+  "mainShadowResource": true,
+  "onMean": 0.24322554228454707,
+  "offMean": 0.25407037921981374,
+  "shadowedScatter": 0.00604934,
+  "unshadowedScatter": 0.0595838465
+}

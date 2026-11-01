@@ -1,0 +1,46 @@
+{
+  "upstreamModel": "Qwen/Qwen3-0.6B",
+  "upstreamRevision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "exportRepo": "onnx-community/Qwen3-0.6B-ONNX",
+  "exportRevision": "58ca03a5e7b354b480b1a82b34bde8dc7b854cc0",
+  "sourceModelSha256": "d43d836fc5e240df9013733ccd214972c5d21bd9ec47e574e4f1e359cf90aed0",
+  "packagedModelSha256": "3133e1a38a41588d5122e96f89d6ccdd06ce641c4432f547e99ea8a690ead303",
+  "weightsUnchangedByLastPositionGather": true,
+  "numericalAudit": {
+    "record": "Equivalence_B.json",
+    "sha256": "cf020db6817dd9a83ad3af394ee40e479828778cd37b1c6ae2eda0103a56e709",
+    "comparisons": [
+      {
+        "step": 0,
+        "logitsMaxAbs": 0.0,
+        "kvMaxAbs": 0.0
+      },
+      {
+        "step": 1,
+        "logitsMaxAbs": 0.0,
+        "kvMaxAbs": 0.0
+      }
+    ]
+  },
+  "transformationRecordSha256": "377dcfe98ca60166ae67adf2891aa80ed0f0bb2a8dd56c730282a2ca2efb73ca",
+  "sourceMetadataSha256": "ff62ebb407d543b9c820271f5268b20bf4f6e257caf9093cfabe2ee152dfc5a3",
+  "tokenizerProfile": {
+    "baseVocabulary": 151643,
+    "merges": 151387,
+    "addedTokens": 26,
+    "definedTokens": 151669,
+    "normalizer": "NFC",
+    "mergeStorage": "pair-array"
+  },
+  "tensorProfile": {
+    "layers": 28,
+    "queryHeads": 16,
+    "kvHeads": 8,
+    "headSize": 128,
+    "vocabulary": 151936,
+    "inputs": 59,
+    "outputs": 57
+  },
+  "candidateOnly": true,
+  "productionTokenizerAndGameAcceptance": "pending"
+}

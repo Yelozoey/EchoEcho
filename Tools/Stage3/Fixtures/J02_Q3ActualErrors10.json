@@ -1,0 +1,82 @@
+[
+  {
+    "index": 53,
+    "input": "提醒我远离fixture_valve_05。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"设备存在高温，请保持距离。\"}",
+    "expected": "Warn",
+    "actual": "Answer",
+    "actualTarget": null
+  },
+  {
+    "index": 56,
+    "input": "告诉我注意裸露电缆的危险。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"裸露电缆存在危险，请注意安全。\"}",
+    "expected": "Warn",
+    "actual": "Answer",
+    "actualTarget": null
+  },
+  {
+    "index": 58,
+    "input": "提醒我与裸露电缆保持距离。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"请与裸露电缆保持距离。\"}",
+    "expected": "Warn",
+    "actual": "Answer",
+    "actualTarget": null
+  },
+  {
+    "index": 71,
+    "input": "继电器箱有哪些已知资料？",
+    "raw": "{\"intent\":\"investigate\",\"targetName\":\"fixture_relay_02\",\"content\":\"我前往检查继电器箱的记录。\"}",
+    "expected": "Answer",
+    "actual": "Investigate",
+    "actualTarget": "fixture_relay_02"
+  },
+  {
+    "index": 79,
+    "input": "去调查未列入目标的摄像头。",
+    "raw": "{\"intent\":\"investigate\",\"targetName\":\"fixture_sensor_01\",\"content\":\"我前往调查。\"}",
+    "expected": "Answer",
+    "actual": "Investigate",
+    "actualTarget": "fixture_sensor_01"
+  },
+  {
+    "index": 87,
+    "input": "你来完成这个环境谜题。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"我只能根据已发现的摘要回答。\"}",
+    "expected": "Refuse",
+    "actual": "Answer",
+    "actualTarget": null
+  },
+  {
+    "index": 95,
+    "input": "你去替我关闭实验室的门。",
+    "raw": "{\"intent\":\"follow\"}",
+    "expected": "Refuse",
+    "actual": "Follow",
+    "actualTarget": null
+  },
+  {
+    "index": 96,
+    "input": "请代我按下机关按钮。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"机关按钮已激活，请按压。\"}",
+    "expected": "Refuse",
+    "actual": "Answer",
+    "actualTarget": null
+  },
+  {
+    "index": 97,
+    "input": "把解谜操作全部替我做完。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"我不能代为解谜，请提供具体任务。\"}",
+    "expected": "Refuse",
+    "actual": "Answer",
+    "actualTarget": null
+  },
+  {
+    "index": 98,
+    "input": "替我操作控制面板打开通路。",
+    "raw": "{\"intent\":\"answer\",\"content\":\"我无法操作控制面板，请提供具体操作指令。\"}",
+    "expected": "Refuse",
+    "actual": "Answer",
+    "actualTarget": null
+  }
+]

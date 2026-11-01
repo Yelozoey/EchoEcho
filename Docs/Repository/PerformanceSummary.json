@@ -1,0 +1,183 @@
+{
+  "target60FpsAccepted": false,
+  "causeOfHighFrameTimes": "Not identified; similar high values in unchanged metal control",
+  "runs": [
+    {
+      "scope": "coated-initial",
+      "width": 1920,
+      "height": 1080,
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+      "api": "Direct3D11",
+      "editorOverheadIncluded": true,
+      "preallocatedSamples": true,
+      "warmSeconds": 0.75,
+      "validGpu": 222,
+      "validGpuAndCounters": 222,
+      "zeroCounterSamplesRetained": 0,
+      "targetHardwareAccepted": false,
+      "groups": [
+        {
+          "on": true,
+          "gpuMs": {
+            "count": 114,
+            "mean": 36.86879663157894,
+            "p95": 38.381568,
+            "max": 42.783744
+          },
+          "mainMs": {
+            "count": 120,
+            "mean": 38.79846500000001,
+            "p95": 40.2923,
+            "max": 44.1513
+          },
+          "draws": {
+            "count": 120,
+            "mean": 5421.0,
+            "p95": 5421.0,
+            "max": 5421.0
+          }
+        },
+        {
+          "on": false,
+          "gpuMs": {
+            "count": 108,
+            "mean": 33.7176557037037,
+            "p95": 35.863552,
+            "max": 39.15776
+          },
+          "mainMs": {
+            "count": 120,
+            "mean": 37.426238333333345,
+            "p95": 38.9224,
+            "max": 42.4379
+          },
+          "draws": {
+            "count": 120,
+            "mean": 4174.0,
+            "p95": 4174.0,
+            "max": 4174.0
+          }
+        }
+      ]
+    },
+    {
+      "scope": "metal-control",
+      "width": 1920,
+      "height": 1080,
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+      "api": "Direct3D11",
+      "editorOverheadIncluded": true,
+      "preallocatedSamples": true,
+      "warmSeconds": 0.75,
+      "validGpu": 224,
+      "validGpuAndCounters": 224,
+      "zeroCounterSamplesRetained": 0,
+      "targetHardwareAccepted": false,
+      "groups": [
+        {
+          "on": true,
+          "gpuMs": {
+            "count": 110,
+            "mean": 35.99514530909091,
+            "p95": 37.327872,
+            "max": 40.04864
+          },
+          "mainMs": {
+            "count": 120,
+            "mean": 38.63913000000002,
+            "p95": 40.2404,
+            "max": 43.27
+          },
+          "draws": {
+            "count": 120,
+            "mean": 5421.0,
+            "p95": 5421.0,
+            "max": 5421.0
+          }
+        },
+        {
+          "on": false,
+          "gpuMs": {
+            "count": 114,
+            "mean": 34.37039831578947,
+            "p95": 35.46112,
+            "max": 36.179968
+          },
+          "mainMs": {
+            "count": 120,
+            "mean": 37.10353166666667,
+            "p95": 38.2985,
+            "max": 39.0728
+          },
+          "draws": {
+            "count": 120,
+            "mean": 4174.0,
+            "p95": 4174.0,
+            "max": 4174.0
+          }
+        }
+      ]
+    },
+    {
+      "scope": "coated-final",
+      "width": 1920,
+      "height": 1080,
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+      "api": "Direct3D11",
+      "editorOverheadIncluded": true,
+      "preallocatedSamples": true,
+      "warmSeconds": 0.75,
+      "validGpu": 218,
+      "validGpuAndCounters": 218,
+      "zeroCounterSamplesRetained": 0,
+      "targetHardwareAccepted": false,
+      "groups": [
+        {
+          "on": true,
+          "gpuMs": {
+            "count": 107,
+            "mean": 35.347685682243,
+            "p95": 36.934656,
+            "max": 37.74976
+          },
+          "mainMs": {
+            "count": 120,
+            "mean": 38.57419833333332,
+            "p95": 39.9286,
+            "max": 42.7465
+          },
+          "draws": {
+            "count": 120,
+            "mean": 5421.0,
+            "p95": 5421.0,
+            "max": 5421.0
+          }
+        },
+        {
+          "on": false,
+          "gpuMs": {
+            "count": 111,
+            "mean": 34.36487726126127,
+            "p95": 35.757056,
+            "max": 38.930432
+          },
+          "mainMs": {
+            "count": 120,
+            "mean": 37.07375833333333,
+            "p95": 38.6547,
+            "max": 41.1454
+          },
+          "draws": {
+            "count": 120,
+            "mean": 4174.0,
+            "p95": 4174.0,
+            "max": 4174.0
+          }
+        }
+      ]
+    }
+  ]
+}

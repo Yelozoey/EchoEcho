@@ -1,0 +1,6 @@
+{
+  "name": "EchoStation.SalvageExpansion.Runtime",
+  "references": ["EchoStation.SalvageExpansion.Domain", "EchoStation.Player.Runtime", "EchoStation.Salvage.Runtime", "EchoStation.Memory.Runtime", "EchoStation.Echo.Runtime", "EchoStation.World.Runtime", "EchoStation.Rendering.Runtime", "EchoStation.SalvageNext.Runtime", "EchoStation.SalvageNext.Domain", "UnityEngine.UI", "Unity.InputSystem", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"],
+  "overrideReferences": true,
+  "precompiledReferences": ["Newtonsoft.Json.dll"]
+}

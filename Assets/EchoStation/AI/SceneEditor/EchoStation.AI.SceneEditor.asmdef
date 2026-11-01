@@ -1,0 +1,1 @@
+{"name":"EchoStation.AI.SceneEditor","includePlatforms":["Editor"],"references":["EchoStation.AI.GameIntegration","EchoStation.Station.Runtime","EchoStation.Rendering.Editor","Unity.AI.Navigation"]}

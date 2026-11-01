@@ -1,0 +1,1 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean(); EchoStation.InfiltrationCoated.Editor.CoatBake.Start("A"); return new {started=true};

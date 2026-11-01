@@ -1,0 +1,1 @@
+EchoStation.InfiltrationMetal.Editor.MetalLighting.Prepare();return new{prepared=true};

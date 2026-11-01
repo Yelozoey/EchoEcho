@@ -1,0 +1,7 @@
+{
+  "name": "EchoStation.Echo.Runtime",
+  "references": [
+    "EchoStation.World.Runtime",
+    "EchoStation.Rendering.Runtime"
+  ]
+}

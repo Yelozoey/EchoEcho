@@ -1,0 +1,26 @@
+{
+  "name": "EchoStation.Player.Editor.Tests",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "references": [
+    "EchoStation.Player.Runtime",
+    "Unity.InputSystem",
+    "Unity.InputSystem.TestFramework",
+    "EchoStation.Rendering.TestFixture",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "EchoStation.Player.Editor",
+    "EchoStation.World.Editor",
+    "EchoStation.Rendering.Editor",
+    "EchoStation.World.Runtime",
+    "UnityEngine.UI",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.Echo.Editor",
+    "EchoStation.Player.TestFixture",
+    "EchoStation.Rendering.Runtime"
+  ]
+}

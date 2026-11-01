@@ -1,0 +1,15 @@
+{
+  "name": "EchoStation.World.Editor",
+  "rootNamespace": "EchoStation.World.Editor",
+  "references": [
+    "EchoStation.Rendering.Editor",
+    "EchoStation.Rendering.Runtime",
+    "EchoStation.Rendering.TestFixture",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.World.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

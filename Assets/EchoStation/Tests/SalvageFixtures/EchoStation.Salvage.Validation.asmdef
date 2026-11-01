@@ -1,0 +1,13 @@
+{
+  "name": "EchoStation.Salvage.Validation",
+  "references": [
+    "EchoStation.Salvage.Runtime",
+    "EchoStation.Player.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Echo.Runtime",
+    "Unity.InputSystem",
+    "UnityEngine.UI",
+    "EchoStation.Dialogue.Runtime"
+  ]
+}

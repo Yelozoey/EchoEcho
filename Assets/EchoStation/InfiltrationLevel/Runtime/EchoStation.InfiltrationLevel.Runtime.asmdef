@@ -1,0 +1,1 @@
+{"name":"EchoStation.InfiltrationLevel.Runtime","references":["EchoStation.Player.Runtime","EchoStation.Salvage.Runtime","EchoStation.InfiltrationArt.Runtime","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime","Unity.InputSystem"],"autoReferenced":true}

@@ -1,0 +1,21 @@
+{
+  "name": "EchoStation.SalvageNext.Runtime",
+  "references": [
+    "Unity.Addressables",
+    "Unity.ResourceManager",
+    "EchoStation.SalvageNext.Domain",
+    "EchoStation.Salvage.Runtime",
+    "EchoStation.Echo.Runtime",
+    "Unity.InputSystem",
+    "EchoStation.Player.Runtime",
+    "EchoStation.Dialogue.Runtime",
+    "UnityEngine.UI",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "EchoStation.Rendering.Runtime"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll"
+  ]
+}

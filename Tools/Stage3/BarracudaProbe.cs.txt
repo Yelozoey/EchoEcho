@@ -1,0 +1,14 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.EditorApplication.isCompiling||UnityEditor.EditorApplication.isUpdating||UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode)throw new System.InvalidOperationException("Editor busy");
+var before=System.Diagnostics.Process.GetCurrentProcess().PrivateMemorySize64;
+var clock=System.Diagnostics.Stopwatch.StartNew();
+object result;
+try {
+ var converter=new Unity.Barracuda.ONNX.ONNXModelConverter(false,false,false);
+ var model=converter.Convert("Library/EchoStation/S3Cache/models/qwen-int4/onnx/model_q4.onnx");
+ result=new{imported=true,layers=model.layers.Count,elapsedMs=clock.ElapsedMilliseconds,privateBefore=before,privateAfter=System.Diagnostics.Process.GetCurrentProcess().PrivateMemorySize64};
+}catch(System.Exception error){
+ result=new{imported=false,type=error.GetType().FullName,message=error.Message,stack=error.StackTrace,elapsedMs=clock.ElapsedMilliseconds,privateBefore=before,privateAfter=System.Diagnostics.Process.GetCurrentProcess().PrivateMemorySize64};
+}
+System.IO.File.WriteAllText("Docs/Tests/Stage3/Evidence/S3-G01/BarracudaActualImport.json",Newtonsoft.Json.JsonConvert.SerializeObject(result,Newtonsoft.Json.Formatting.Indented));
+return result;

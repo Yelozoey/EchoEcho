@@ -1,0 +1,1 @@
+{"name":"EchoStation.AI.Authorization","noEngineReferences":true,"references":["EchoStation.Memory.Runtime","EchoStation.AI.Context","EchoStation.AI.IntentJson","EchoStation.Dialogue.Commands","EchoStation.Dialogue.Knowledge","EchoStation.Echo.Runtime"]}

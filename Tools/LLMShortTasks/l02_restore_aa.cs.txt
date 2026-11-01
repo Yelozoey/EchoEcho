@@ -1,0 +1,21 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+const string folder="Docs/Tests/SalvagePrototype/Evidence/LLMShortTasks/L02";
+var baseline=Newtonsoft.Json.Linq.JObject.Parse(System.IO.File.ReadAllText(folder+"/NativeBefore_A.json"));
+string temp=UnityEditor.AssetDatabase.AssetPathToGUID("Assets/EchoStation/Rendering/Settings/ES_Gameplay_ForwardHDR.asset");
+string originalGraphics=null,originalPc=null;int aa=0;
+foreach(var entry in baseline.Properties()){
+ var obj=UnityEditor.AssetDatabase.LoadAllAssetsAtPath(entry.Name).Single();var expected=Newtonsoft.Json.Linq.JObject.Parse((string)entry.Value["json"]);var current=Newtonsoft.Json.Linq.JObject.Parse(UnityEditor.EditorJsonUtility.ToJson(obj));var allowed=(Newtonsoft.Json.Linq.JObject)expected.DeepClone();
+ var original=System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String((string)entry.Value["disk"]));var variants=new System.Collections.Generic.List<string>{original};
+ if(entry.Name.EndsWith("/GraphicsSettings.asset")){originalGraphics=(string)expected["GraphicsSettings"]["m_CustomRenderPipeline"]["guid"];var value=current["GraphicsSettings"]["m_CustomRenderPipeline"];if((string)value["guid"]!=originalGraphics&&(string)value["guid"]!=temp)throw new System.InvalidOperationException("Unknown default binding");allowed["GraphicsSettings"]["m_CustomRenderPipeline"]=value.DeepClone();variants.Add(original.Replace(originalGraphics,temp));}
+ if(entry.Name.EndsWith("/QualitySettings.asset")){
+  var pc=expected["QualitySettings"]["m_QualitySettings"][1];var now=current["QualitySettings"]["m_QualitySettings"][1];if((string)pc["name"]!="PC"||UnityEngine.QualitySettings.GetQualityLevel()!=1)throw new System.InvalidOperationException("Unknown quality");aa=(int)pc["antiAliasing"];originalPc=(string)pc["customRenderPipeline"]["guid"];if(aa!=4||((int)now["antiAliasing"]!=aa&&(int)now["antiAliasing"]!=0)||((string)now["customRenderPipeline"]["guid"]!=originalPc&&(string)now["customRenderPipeline"]["guid"]!=temp))throw new System.InvalidOperationException("Unknown PC changes");allowed["QualitySettings"]["m_QualitySettings"][1]["customRenderPipeline"]=now["customRenderPipeline"].DeepClone();allowed["QualitySettings"]["m_QualitySettings"][1]["antiAliasing"]=now["antiAliasing"].DeepClone();variants.Add(original.Replace(originalPc,temp));
+  foreach(var text in variants.ToArray()){var match=System.Text.RegularExpressions.Regex.Match(text,@"(?m)^    name: PC\r?$");if(!match.Success)throw new System.InvalidOperationException("PC YAML marker missing");int end=text.IndexOf("\n  - serializedVersion:",match.Index,StringComparison.Ordinal);if(end<0)end=text.Length;string block=text.Substring(match.Index,end-match.Index);if(block.Split(new[]{"    antiAliasing: 4"},StringSplitOptions.None).Length!=2)throw new System.InvalidOperationException("Unexpected PC AA bytes");variants.Add(text.Substring(0,match.Index)+block.Replace("    antiAliasing: 4","    antiAliasing: 0")+text.Substring(end));}
+ }
+ if(!Newtonsoft.Json.Linq.JToken.DeepEquals(current,allowed))throw new System.InvalidOperationException("Other native changes: "+entry.Name);
+ if(!variants.Contains(System.Text.Encoding.UTF8.GetString(System.IO.File.ReadAllBytes(entry.Name))))throw new System.InvalidOperationException("Other disk changes: "+entry.Name);
+}
+UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Rendering.RenderPipelineAsset>(UnityEditor.AssetDatabase.GUIDToAssetPath(originalGraphics));
+UnityEngine.QualitySettings.renderPipeline=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Rendering.RenderPipelineAsset>(UnityEditor.AssetDatabase.GUIDToAssetPath(originalPc));
+UnityEngine.QualitySettings.antiAliasing=aa;
+const string qualityPath="ProjectSettings/QualitySettings.asset";var bytes=System.Convert.FromBase64String((string)baseline[qualityPath]["disk"]);if(!System.IO.File.ReadAllBytes(qualityPath).SequenceEqual(bytes))System.IO.File.WriteAllBytes(qualityPath,bytes);
+return new {onlyKnownTemporaryBindingAndDerivedAaAllowed=true,restoredOriginalBindings=true,aa=UnityEngine.QualitySettings.antiAliasing};

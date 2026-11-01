@@ -1,0 +1,6 @@
+{
+  "name": "EchoStation.Rendering.Editor",
+  "rootNamespace": "EchoStation.Rendering.Editor",
+  "references": ["Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime", "EchoStation.Rendering.TestFixture", "EchoStation.Rendering.Runtime"],
+  "includePlatforms": ["Editor"]
+}

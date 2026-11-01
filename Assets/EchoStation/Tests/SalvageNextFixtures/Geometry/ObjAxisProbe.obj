@@ -1,0 +1,10 @@
+# Owned coordinate-system probe, not game art.
+o EchoStation_ObjAxisProbe
+v 1 2 3
+v 2 2 3
+v 1 4 7
+vt 0 0
+vt 1 0
+vt 0 1
+vn 0 -0.89442719 0.44721360
+f 1/1/1 2/2/1 3/3/1

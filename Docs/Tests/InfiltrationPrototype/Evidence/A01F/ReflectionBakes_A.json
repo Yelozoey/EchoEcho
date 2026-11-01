@@ -1,0 +1,50 @@
+[
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_0_A.exr",
+    "resolution": 128,
+    "bytes": 332186,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_1_A.exr",
+    "resolution": 256,
+    "bytes": 1176240,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_2_A.exr",
+    "resolution": 256,
+    "bytes": 1215122,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_3_A.exr",
+    "resolution": 128,
+    "bytes": 348630,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_4_A.exr",
+    "resolution": 128,
+    "bytes": 332846,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_5_A.exr",
+    "resolution": 128,
+    "bytes": 333053,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_6_A.exr",
+    "resolution": 128,
+    "bytes": 354024,
+    "baked": true
+  },
+  {
+    "path": "Assets/EchoStation/InfiltrationCoated/Generated/CF_IL_Reflection_7_A.exr",
+    "resolution": 128,
+    "bytes": 343107,
+    "baked": true
+  }
+]

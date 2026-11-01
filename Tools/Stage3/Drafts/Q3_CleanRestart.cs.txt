@@ -1,0 +1,13 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage()!=null)throw new System.InvalidOperationException("Preserving open Prefab Stage");
+var api=System.AppDomain.CurrentDomain.GetAssemblies().Select(a=>a.GetType("UnityEditor.TestTools.TestRunner.Api.TestRunnerApi")).First(t=>t!=null);
+var method=api.GetMethod("IsRunActive",System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static);
+if(method==null||(bool)method.Invoke(null,null))throw new System.InvalidOperationException("Tests active or status unknown");
+var latest=System.IO.Directory.GetFiles("Docs/Tests/Stage3/Evidence/S3-J01/CandidateQwen3/Tuning","UnityTuning_*.json").OrderByDescending(p=>System.IO.File.GetLastWriteTimeUtc(p)).First();
+var report=Newtonsoft.Json.Linq.JObject.Parse(System.IO.File.ReadAllText(latest));
+if(!(bool)report["completed"]||!(bool)report["ownerCleanupComplete"])throw new System.InvalidOperationException("Inference Owner still draining");
+var evidence="Docs/Tests/Stage3/Evidence/S3-J01/CandidateQwen3/Tuning/Restart_20261027_A/Guard.json";
+if(System.IO.File.Exists(evidence))throw new System.InvalidOperationException("Fresh evidence required");
+var record=new {utc=System.DateTime.UtcNow.ToString("O"),pid=System.Diagnostics.Process.GetCurrentProcess().Id,clean=true,ownerCleanupComplete=true,api=UnityEngine.SystemInfo.graphicsDeviceType.ToString(),assets=UnityEngine.Application.dataPath,raw=latest};
+System.IO.File.WriteAllText(evidence,Newtonsoft.Json.JsonConvert.SerializeObject(record,Newtonsoft.Json.Formatting.Indented));
+return record;

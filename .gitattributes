@@ -1,0 +1,18 @@
+# Preserve exact bytes, including legacy prompt strings and checksummed model metadata.
+# Disabling EOL conversion does not disable ordinary source-code diffs.
+* -text
+*.cs diff
+*.py diff
+*.md diff
+*.json diff
+*.shader diff
+*.meta diff
+*.fbx -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.exr -text
+*.dll -text
+*.otf -text
+*.ttf -text
+*.onnx -text

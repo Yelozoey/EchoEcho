@@ -1,0 +1,9 @@
+[
+  {
+    "path": "Packages/com.coplaydev.unity-mcp/Editor/Tools/Blender/BlenderBridgeTool.cs",
+    "line": 856,
+    "kind": "credential-url",
+    "lineSha256": "8692b835c2b7c269a7a81e8310a6272dfcbcc469d7b2ef90f6c4c8297968f54f",
+    "reason": "Reviewed upstream XML documentation example explaining URL credential redaction, with dummy user/pass and host; not an actual stored credential. Exact line hash required."
+  }
+]

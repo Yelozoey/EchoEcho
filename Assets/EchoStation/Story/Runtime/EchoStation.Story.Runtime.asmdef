@@ -1,0 +1,7 @@
+{
+  "name": "EchoStation.Story.Runtime",
+  "noEngineReferences": true,
+  "overrideReferences": true,
+  "precompiledReferences": [],
+  "references": ["EchoStation.Memory.Runtime", "EchoStation.Dialogue.Knowledge", "EchoStation.Dialogue.Commands", "EchoStation.Echo.Runtime"]
+}

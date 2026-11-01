@@ -1,0 +1,1 @@
+{"name":"EchoStation.ReflectionSample.Runtime","references":["EchoStation.Player.Runtime","EchoStation.Salvage.Runtime","Unity.InputSystem","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime"]}

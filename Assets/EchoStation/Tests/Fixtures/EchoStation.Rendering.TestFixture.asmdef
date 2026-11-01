@@ -1,0 +1,4 @@
+{
+  "name": "EchoStation.Rendering.TestFixture",
+  "references": ["Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime", "EchoStation.Rendering.Runtime"]
+}

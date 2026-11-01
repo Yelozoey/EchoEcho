@@ -1,0 +1,9 @@
+# S3-C02 原样Prompt与后台准备
+
+2026-10-26，C01通过归档后实施。a为固定正文/官方ChatTemplate/1536输入预算及纯数据独立测试，b再接Owner实际模型，分别归档。
+
+正文逐字取DevelopmentPlan的固定markdown块（统一LF，保留末尾换行），只按两个占位位置拼接，禁止递归Replace污染玩家字串。包装采用已G01/A02证实的Qwen官方默认system加单user正文、assistant生成头；role/EOS边界只由TrustedTokenSequence显式插入，来源正文中的同名字串EncodePlain。上游Python离线产生10组golden IDs与官方apply_chat_template文本对照，源固定不下载。
+
+retrieved_memory包含相关摘要与允许目标JSON。C01的记忆512/1200/8保持；再核算完整输入≤1536，先删除最低优先级完整记忆条目，仍超限则删除末尾完整目标；提供给模型的有效ID列表随裁剪同步，后续J02只信此列表。玩家输入/规则/ID均不截断、不补写。预留生成256，合计≤2048。若最小包装仍超预算，拒绝本次，不调用native。
+
+b在已拥有tokenizer的Owner内完成检索/脱敏/Prompt/tokenization，主线程仅捕获不可变快照并投递，无GameObject。结果带只读实际PreparedPrompt与有效目标以供审计和主线程权限重查；20秒请求预算覆盖准备过程，300ms/epoch/取消规则保持。原始greedy格式问题F120仍待J01结构约束，不把Prompt组装测试当质量通过。

@@ -1,0 +1,1 @@
+{"name":"EchoStation.SalvageNext.Domain","references":["EchoStation.Salvage.Runtime","EchoStation.Echo.Runtime","EchoStation.Memory.Runtime","EchoStation.AI.Context","EchoStation.AI.Authorization","EchoStation.AI.IntentJson"],"noEngineReferences":true}

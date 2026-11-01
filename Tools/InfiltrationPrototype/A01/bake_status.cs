@@ -1,0 +1,1 @@
+return new {running=UnityEditor.Lightmapping.isRunning,progress=UnityEditor.Lightmapping.buildProgress,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path,maps=UnityEngine.LightmapSettings.lightmaps.Length,playing=UnityEditor.EditorApplication.isPlaying,compiling=UnityEditor.EditorApplication.isCompiling};

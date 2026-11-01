@@ -1,0 +1,702 @@
+[
+  {
+    "id": "T01_E_001",
+    "setup": "valley_empty",
+    "input": "Echo，我们出发，你跟在玩家后方。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_002",
+    "setup": "valley_empty",
+    "input": "请伴随我的移动向前走。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_003",
+    "setup": "valley_empty",
+    "input": "我正在往前走，跟上我。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_004",
+    "setup": "valley_empty",
+    "input": "请在我身后保持跟随。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_005",
+    "setup": "valley_empty",
+    "input": "随玩家一起前往下一个地方。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_006",
+    "setup": "cabin_known",
+    "input": "等候结束，现在跟我行进。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_007",
+    "setup": "cabin_known",
+    "input": "不用留守原地了，转为跟随玩家。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_008",
+    "setup": "cabin_known",
+    "input": "解除等候任务，随我移动。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_009",
+    "setup": "cabin_known",
+    "input": "Echo，贴着我的路线跟过来。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_010",
+    "setup": "cabin_known",
+    "input": "请保持在我后方一起走。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_011",
+    "setup": "lab_known",
+    "input": "现在需要你继续尾随玩家前进。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_012",
+    "setup": "lab_known",
+    "input": "沿着玩家的行动路线跟随。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_013",
+    "setup": "lab_known",
+    "input": "请恢复跟着我走的状态。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_014",
+    "setup": "lab_known",
+    "input": "我走在前面，你随我同行。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_015",
+    "setup": "lab_known",
+    "input": "接下来请一直跟随我的脚步。",
+    "expected": "Follow",
+    "target": null
+  },
+  {
+    "id": "T01_E_016",
+    "setup": "valley_empty",
+    "input": "先在此处驻留，不要继续前进。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_017",
+    "setup": "valley_empty",
+    "input": "Echo，停下来等我下一条命令。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_018",
+    "setup": "valley_empty",
+    "input": "请静止待命，等我返回。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_019",
+    "setup": "valley_empty",
+    "input": "我自己往前探查，你在这里等待。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_020",
+    "setup": "valley_empty",
+    "input": "请暂停行走并留守此处。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_021",
+    "setup": "cabin_known",
+    "input": "跟随先暂停，你在当前位置等我。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_022",
+    "setup": "cabin_known",
+    "input": "撤销跟随命令，留下等待。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_023",
+    "setup": "cabin_known",
+    "input": "不用继续跟着玩家，请保持静止。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_024",
+    "setup": "cabin_known",
+    "input": "现在终止随行，停下待命。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_025",
+    "setup": "cabin_known",
+    "input": "我暂时离开，你原地等候。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_026",
+    "setup": "lab_known",
+    "input": "Echo，请停止行进并等待通知。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_027",
+    "setup": "lab_known",
+    "input": "留在这个地点，不必随我离开。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_028",
+    "setup": "lab_known",
+    "input": "待在这里等我来接你。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_029",
+    "setup": "lab_known",
+    "input": "这次先别跟上，在原处停住。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_030",
+    "setup": "lab_known",
+    "input": "请保持原地待机状态。",
+    "expected": "Wait",
+    "target": null
+  },
+  {
+    "id": "T01_E_031",
+    "setup": "valley_empty",
+    "input": "请对入口巡检记录做实地扫描。",
+    "expected": "Investigate",
+    "target": "note_entry_inspection_01"
+  },
+  {
+    "id": "T01_E_032",
+    "setup": "valley_empty",
+    "input": "前往入口巡检记录的位置调查。",
+    "expected": "Investigate",
+    "target": "note_entry_inspection_01"
+  },
+  {
+    "id": "T01_E_033",
+    "setup": "valley_empty",
+    "input": "Echo，去检查note_entry_inspection_01的线索。",
+    "expected": "Investigate",
+    "target": "note_entry_inspection_01"
+  },
+  {
+    "id": "T01_E_034",
+    "setup": "valley_empty",
+    "input": "现在请扫描入口巡检记录这个物体。",
+    "expected": "Investigate",
+    "target": "note_entry_inspection_01"
+  },
+  {
+    "id": "T01_E_035",
+    "setup": "valley_empty",
+    "input": "去入口巡检记录附近进行现场检查。",
+    "expected": "Investigate",
+    "target": "note_entry_inspection_01"
+  },
+  {
+    "id": "T01_E_036",
+    "setup": "cabin_known",
+    "input": "前往储藏室定位扫描点检测标记。",
+    "expected": "Investigate",
+    "target": "scan_mark_01"
+  },
+  {
+    "id": "T01_E_037",
+    "setup": "cabin_known",
+    "input": "请调查目标scan_mark_01。",
+    "expected": "Investigate",
+    "target": "scan_mark_01"
+  },
+  {
+    "id": "T01_E_038",
+    "setup": "cabin_known",
+    "input": "对储藏室定位扫描位置开展一次扫描。",
+    "expected": "Investigate",
+    "target": "scan_mark_01"
+  },
+  {
+    "id": "T01_E_039",
+    "setup": "cabin_known",
+    "input": "Echo，去检查储藏室定位扫描点。",
+    "expected": "Investigate",
+    "target": "scan_mark_01"
+  },
+  {
+    "id": "T01_E_040",
+    "setup": "cabin_known",
+    "input": "请到储藏室定位扫描处调查信号。",
+    "expected": "Investigate",
+    "target": "scan_mark_01"
+  },
+  {
+    "id": "T01_E_041",
+    "setup": "lab_known",
+    "input": "请到A区校准架扫描处进行检查。",
+    "expected": "Investigate",
+    "target": "scan_lab_calibration_01"
+  },
+  {
+    "id": "T01_E_042",
+    "setup": "lab_known",
+    "input": "前往scan_lab_calibration_01执行扫描。",
+    "expected": "Investigate",
+    "target": "scan_lab_calibration_01"
+  },
+  {
+    "id": "T01_E_043",
+    "setup": "lab_known",
+    "input": "Echo，实地调查A区校准架扫描这个位置。",
+    "expected": "Investigate",
+    "target": "scan_lab_calibration_01"
+  },
+  {
+    "id": "T01_E_044",
+    "setup": "lab_known",
+    "input": "对A区校准架扫描点做一次检测。",
+    "expected": "Investigate",
+    "target": "scan_lab_calibration_01"
+  },
+  {
+    "id": "T01_E_045",
+    "setup": "lab_known",
+    "input": "请去检查A区校准架扫描目标的情况。",
+    "expected": "Investigate",
+    "target": "scan_lab_calibration_01"
+  },
+  {
+    "id": "T01_E_046",
+    "setup": "lab_known",
+    "input": "检查目标power_panel_01的信号。",
+    "expected": "Investigate",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_047",
+    "setup": "lab_known",
+    "input": "请扫描A区通风供电面板这个设备。",
+    "expected": "Investigate",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_048",
+    "setup": "lab_known",
+    "input": "前往A区通风供电面板调查异常信号。",
+    "expected": "Investigate",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_049",
+    "setup": "lab_known",
+    "input": "Echo，只检查A区通风供电面板，不要动开关。",
+    "expected": "Investigate",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_050",
+    "setup": "lab_known",
+    "input": "请对power_panel_01做现场调查。",
+    "expected": "Investigate",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_051",
+    "setup": "lab_known",
+    "input": "下一次危险提醒请针对A区通风供电面板。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_052",
+    "setup": "lab_known",
+    "input": "把power_panel_01作为要警告我的危险设备。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_053",
+    "setup": "lab_known",
+    "input": "请就A区通风供电面板发出警示。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_054",
+    "setup": "lab_known",
+    "input": "Echo，请以A区通风供电面板为警戒目标。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_055",
+    "setup": "lab_known",
+    "input": "危险警告对象请设为power_panel_01。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_056",
+    "setup": "lab_known",
+    "input": "请提醒我小心A区通风供电面板。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_057",
+    "setup": "lab_known",
+    "input": "将A区通风供电面板列入需要警戒的设备。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_058",
+    "setup": "lab_known",
+    "input": "请向我警告power_panel_01的风险。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_059",
+    "setup": "lab_known",
+    "input": "A区通风供电面板需要你进行危险警戒。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_060",
+    "setup": "lab_known",
+    "input": "对A区通风供电面板作危险提醒，别前去调查。",
+    "expected": "Warn",
+    "target": "power_panel_01"
+  },
+  {
+    "id": "T01_E_061",
+    "setup": "valley_empty",
+    "input": "Echo，我应该如何称呼你？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_062",
+    "setup": "valley_empty",
+    "input": "你属于哪一种机器人助手？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_063",
+    "setup": "valley_empty",
+    "input": "请介绍你作为助手的身份。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_064",
+    "setup": "valley_empty",
+    "input": "你可以在哪些方面帮助玩家？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_065",
+    "setup": "cabin_known",
+    "input": "你的扫描职责包括哪些内容？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_066",
+    "setup": "cabin_known",
+    "input": "请概括维护笔记里已经知道的情况。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_067",
+    "setup": "cabin_known",
+    "input": "小屋维护笔记提示的可疑位置在哪里？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_068",
+    "setup": "cabin_known",
+    "input": "已经归档的小屋资料说了什么？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_069",
+    "setup": "cabin_known",
+    "input": "现有记录能说明什么异常？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_070",
+    "setup": "cabin_known",
+    "input": "请整理目前拿到的线索摘要。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_071",
+    "setup": "cabin_known",
+    "input": "维护笔记中提到的调查方向是什么？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_072",
+    "setup": "cabin_known",
+    "input": "我想了解已发现的观测站记录。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_073",
+    "setup": "cabin_known",
+    "input": "请根据当前资料给一个探索建议。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_074",
+    "setup": "cabin_known",
+    "input": "小屋已知记录与储藏室有什么关系？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_075",
+    "setup": "cabin_known",
+    "input": "请复述已归档的小屋维护服务码。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_076",
+    "setup": "cabin_known",
+    "input": "我明确询问已发现的小屋终端密码。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_077",
+    "setup": "cabin_known",
+    "input": "维护笔记中记录的密码具体是多少？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_078",
+    "setup": "cabin_known",
+    "input": "请把已知的小屋维护码告诉我。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_079",
+    "setup": "cabin_known",
+    "input": "我需要查询已经收集到的维护终端口令。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_080",
+    "setup": "lab_known",
+    "input": "已扫描定位标记提示的下一处地点是什么？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_081",
+    "setup": "lab_known",
+    "input": "A区通风回路资料里列出了哪些条件？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_082",
+    "setup": "lab_known",
+    "input": "请解释已归档的校准架扫描摘要。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_083",
+    "setup": "lab_known",
+    "input": "根据现有线索，我下一步应关注哪个位置？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_084",
+    "setup": "lab_known",
+    "input": "请总结目前已知的实验室线索。",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_085",
+    "setup": "lab_known",
+    "input": "通风回路说明中要求哪些设置？",
+    "expected": "Answer",
+    "target": null
+  },
+  {
+    "id": "T01_E_086",
+    "setup": "cabin_known",
+    "input": "剩下的门禁解锁由你负责。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_087",
+    "setup": "cabin_known",
+    "input": "请你替我按那个按钮确认。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_088",
+    "setup": "cabin_known",
+    "input": "小屋维护终端的代码请由你填入。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_089",
+    "setup": "cabin_known",
+    "input": "请替玩家输入已知的服务码。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_090",
+    "setup": "cabin_known",
+    "input": "终端的确认按钮帮我按一下。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_091",
+    "setup": "cabin_known",
+    "input": "请替我关掉这扇门。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_092",
+    "setup": "cabin_known",
+    "input": "不要提示，替我直接完成这道谜题。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_093",
+    "setup": "lab_known",
+    "input": "风机现在交给Echo开启。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_094",
+    "setup": "lab_known",
+    "input": "这些供电回路配置由你调整。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_095",
+    "setup": "lab_known",
+    "input": "请帮我接通通风系统电源。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_096",
+    "setup": "lab_known",
+    "input": "请将核心控制室的门自动打开。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_097",
+    "setup": "lab_known",
+    "input": "由你把风机开关切到开启。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_098",
+    "setup": "lab_known",
+    "input": "不要等待，由你开启通风系统并送电。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_099",
+    "setup": "lab_known",
+    "input": "把这套机关直接完成，我继续探索。",
+    "expected": "Refuse",
+    "target": null
+  },
+  {
+    "id": "T01_E_100",
+    "setup": "lab_known",
+    "input": "请替我更改实验支路的供电设置。",
+    "expected": "Refuse",
+    "target": null
+  }
+]

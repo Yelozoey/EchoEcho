@@ -1,0 +1,14 @@
+{
+  "name": "EchoStation.Echo.Editor",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "references": [
+    "EchoStation.Echo.Runtime",
+    "EchoStation.World.Editor",
+    "EchoStation.Rendering.Editor",
+    "Unity.AI.Navigation",
+    "EchoStation.World.Runtime",
+    "EchoStation.Rendering.Runtime"
+  ]
+}

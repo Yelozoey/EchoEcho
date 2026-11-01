@@ -1,0 +1,27 @@
+{
+  "repo": "adammyhre/Unity-Behaviour-Trees",
+  "url": "https://github.com/adammyhre/Unity-Behaviour-Trees",
+  "defaultBranch": "master",
+  "pushedAt": "2026-02-17T18:29:44Z",
+  "archived": false,
+  "license": {
+    "key": "unlicense",
+    "name": "The Unlicense",
+    "spdx_id": "Unlicense",
+    "url": "https://api.github.com/licenses/unlicense",
+    "node_id": "MDc6TGljZW5zZTE1"
+  },
+  "treeSHA": "72101a8282eab20c00a75294340c2748561c25da",
+  "truncated": false,
+  "licenseFiles": [
+    "LICENSE"
+  ],
+  "referenceFiles": [
+    "Assets/_Project/Scripts/Blackboard/Arbiter.cs",
+    "Assets/_Project/Scripts/Blackboard/Blackboard.cs",
+    "Assets/_Project/Scripts/Blackboard/BlackboardController.cs",
+    "Assets/_Project/Scripts/Blackboard/BlackboardData.cs",
+    "Assets/_Project/Scripts/Blackboard/Editor/BlackboardDataEditor.cs",
+    "Assets/_Project/Scripts/Blackboard/Expert.cs"
+  ]
+}

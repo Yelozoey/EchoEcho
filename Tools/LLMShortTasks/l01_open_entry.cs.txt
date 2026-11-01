@@ -1,0 +1,10 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.EditorApplication.isPlaying||UnityEditor.EditorApplication.isCompiling)throw new System.InvalidOperationException("Editor must be idle before preparing the user's entry");
+const string folder="Docs/Tests/SalvagePrototype/Evidence/LLMShortTasks/L01";
+const string path="Assets/EchoStation/SalvageExpansion/Scenes/ES_EnvironmentalSalvage.unity";
+var start=UnityEditor.SceneManagement.EditorSceneManager.playModeStartScene;string startPath=UnityEditor.AssetDatabase.GetAssetPath(start);
+if(!string.IsNullOrEmpty(startPath)&&startPath!=path)return new {opened=false,reason="Existing Play Mode Start Scene overrides the active scene",existingPlayStart=startPath};
+var previous=UnityEditor.SceneManagement.EditorSceneManager.GetSceneManagerSetup().Select(s=>s.path).ToArray();
+var scene=UnityEditor.SceneManagement.EditorSceneManager.OpenScene(path,UnityEditor.SceneManagement.OpenSceneMode.Single);
+var result=new {opened=scene.path==path&&!scene.isDirty,scene=scene.path,dirty=scene.isDirty,playing=UnityEditor.EditorApplication.isPlaying,playStartScene=startPath,previousLayout=previous,pipeline=UnityEditor.AssetDatabase.GetAssetPath(UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline),aa=UnityEngine.QualitySettings.antiAliasing};
+if(System.IO.File.Exists(folder+"/EditorEntry.json"))throw new System.InvalidOperationException("Preserve entry receipt");System.IO.File.WriteAllText(folder+"/EditorEntry.json",Newtonsoft.Json.JsonConvert.SerializeObject(result,Newtonsoft.Json.Formatting.Indented));return result;

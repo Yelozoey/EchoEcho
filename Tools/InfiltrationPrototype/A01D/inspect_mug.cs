@@ -1,0 +1,3 @@
+var source=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>("Assets/EchoStation/InfiltrationRefinement/ThirdParty/Prop_Mug.fbx");
+var own=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>("Assets/EchoStation/InfiltrationRefinement/Prefabs/DR_Mug.prefab");
+return new {source=source.GetComponentsInChildren<UnityEngine.Renderer>().SelectMany(r=>r.sharedMaterials).Select(m=>new{name=m.name,shader=m.shader.name,texture=UnityEditor.AssetDatabase.GetAssetPath(m.GetTexture("_BaseMap"))}).ToArray(),adapted=own.GetComponentsInChildren<UnityEngine.Renderer>().SelectMany(r=>r.sharedMaterials).Select(m=>new{name=m.name,shader=m.shader.name,texture=UnityEditor.AssetDatabase.GetAssetPath(m.GetTexture("_BaseMap"))}).ToArray()};

@@ -1,0 +1,6 @@
+{
+  "name": "EchoStation.Memory.Runtime",
+  "noEngineReferences": true,
+  "overrideReferences": true,
+  "precompiledReferences": ["Newtonsoft.Json.dll"]
+}

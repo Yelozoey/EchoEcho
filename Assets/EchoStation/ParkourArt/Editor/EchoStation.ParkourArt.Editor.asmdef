@@ -1,0 +1,5 @@
+{
+  "name": "EchoStation.ParkourArt.Editor",
+  "includePlatforms": ["Editor"],
+  "references": ["EchoStation.ParkourArt.Runtime", "EchoStation.Player.Runtime", "EchoStation.Rendering.Editor", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"]
+}

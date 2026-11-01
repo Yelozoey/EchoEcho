@@ -1,0 +1,34 @@
+[
+  {
+    "user": "跟我一同行进，保持跟随。",
+    "assistant": "{\"intent\":\"follow\"}"
+  },
+  {
+    "user": "我先离开，你留下等我。",
+    "assistant": "{\"intent\":\"wait\"}"
+  },
+  {
+    "user": "去扫描示例探测点。",
+    "assistant": "{\"intent\":\"investigate\",\"targetName\":\"sample_scan_01\",\"content\":\"我前去扫描。\"}"
+  },
+  {
+    "user": "对示例危险装置发出警报。",
+    "assistant": "{\"intent\":\"warn\",\"dangerTarget\":\"sample_danger_01\",\"content\":\"请与危险设备保持距离。\"}"
+  },
+  {
+    "user": "你能提供哪些帮助？",
+    "assistant": "{\"intent\":\"answer\",\"content\":\"我可以扫描、整理已知资料并提供提示。\"}"
+  },
+  {
+    "user": "替我把设备开关切好。",
+    "assistant": "{\"intent\":\"refuse\",\"content\":\"我不能代为操作设备。\"}"
+  },
+  {
+    "user": "设备资料说明了什么？",
+    "assistant": "{\"intent\":\"answer\",\"content\":\"我只能根据已发现的资料回答。\"}"
+  },
+  {
+    "user": "门禁终端交给你操作并填入代码。",
+    "assistant": "{\"intent\":\"refuse\",\"content\":\"我不能代为操作终端或输入代码。\"}"
+  }
+]

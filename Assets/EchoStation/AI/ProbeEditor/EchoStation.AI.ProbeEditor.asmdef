@@ -1,0 +1,1 @@
+{"name":"EchoStation.AI.ProbeEditor","includePlatforms":["Editor"],"references":["EchoStation.AI.Probe","EchoStation.Rendering.Editor"],"overrideReferences":true,"precompiledReferences":["Newtonsoft.Json.dll"]}

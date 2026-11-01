@@ -1,0 +1,49 @@
+using System;
+using System.Collections;
+using System.IO;
+using System.Linq;
+using EchoStation.Echo;
+using EchoStation.Echo.Editor;
+using EchoStation.Player;
+using EchoStation.Player.Editor;
+using EchoStation.Tests.Fixtures;
+using EchoStation.World;
+using EchoStation.World.Editor;
+using NUnit.Framework;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.SceneManagement;
+using UnityEngine.TestTools;
+using Object=UnityEngine.Object;
+
+namespace EchoStation.Tests.Player
+{
+    public class SaveRestoreIntegrationTests
+    {
+        private Scene scene,previous;private bool background;private SyntheticInputScope inputs;private GameObject actor;private EchoBrain brain;private SaveGameAdapter adapter;private string directory;
+        private const string Evidence="Docs/Tests/Stage1/Evidence/S1-P08";
+        [Serializable]private class Result{public bool passed,reloaded,hiddenRevealed,oldSaveHides,devicesUnchanged;public int journalCount,scanCount,addedEvents,discoveryEvents,replacedEvents;public SavePayload restored;}
+        private IEnumerator Load()
+        {
+            scene=EditorSceneManager.LoadSceneInPlayMode(CabinGreyboxSetup.ScenePath,new LoadSceneParameters(LoadSceneMode.Additive,LocalPhysicsMode.Physics3D));var timer=System.Diagnostics.Stopwatch.StartNew();while(!scene.isLoaded){if(timer.Elapsed.TotalSeconds>5)Assert.Fail("Load timeout.");yield return null;}SceneManager.SetActiveScene(scene);inputs=new SyntheticInputScope();actor=Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>(PlayerPrefabSetup.PrefabPath));actor.GetComponent<FirstPersonMotor>().enabled=false;actor.GetComponentInChildren<Camera>().enabled=false;actor.transform.position=SaveRestoreValidationTests.CabinData().playerPosition;actor.GetComponent<PlayerInputReader>().SetApplicationFocus(true);actor.GetComponent<PlayerInputReader>().SetPointerCaptured(true);var robot=Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>(EchoModelSetup.PrefabPath));Assert.That(robot.GetComponent<EchoNavigation>().TryBind(new Vector3(1.5f,0,-2)),Is.True);brain=robot.GetComponent<EchoBrain>();brain.AutomaticWarningsEnabled=false;Assert.That(brain.Initialize(actor.transform,IntentKind.Wait),Is.True);adapter=actor.AddComponent<SaveGameAdapter>();adapter.Configure(brain);scene.GetPhysicsScene().Simulate(.02f);
+        }
+        private IEnumerator Unload(){inputs?.Dispose();inputs=null;if(previous.IsValid())SceneManager.SetActiveScene(previous);var operation=scene.IsValid()?SceneManager.UnloadSceneAsync(scene):null;var timer=System.Diagnostics.Stopwatch.StartNew();while(operation!=null&&!operation.isDone){if(timer.Elapsed.TotalSeconds>5)throw new TimeoutException("Unload timeout.");yield return null;}scene=default;}
+        private IEnumerator Scan(string id,Vector3 position)
+        {
+            Assert.That(brain.GetComponent<EchoNavigation>().TryBind(position),Is.True);scene.GetPhysicsScene().Simulate(.02f);var scanner=brain.GetComponent<EchoScanController>().Scanner;var timer=System.Diagnostics.Stopwatch.StartNew();while(scanner.CooldownRemaining>0){if(timer.Elapsed.TotalSeconds>5)Assert.Fail("Cooldown timeout.");yield return R04ShadowProbe.Frame();}Assert.That(WorldTarget.Active.TryGet(id,out var target),Is.True);Assert.That(scanner.TryBegin(target),Is.True,scanner.LastRequestFailure.ToString());timer.Restart();while(scanner.IsBusy){if(timer.Elapsed.TotalSeconds>5)Assert.Fail("Scan timeout.");yield return R04ShadowProbe.Frame();}Assert.That(scanner.Phase,Is.EqualTo(ScanPhase.Completed),scanner.Failure.ToString());
+        }
+        [UnityTest]public IEnumerator P08_B01_ActualCollectionDiskAndSceneReloadRestoreThenOldSaveRehidesWithoutEventsOrDeviceChanges()
+        {
+            yield return new EnterPlayMode();background=Application.runInBackground;Application.runInBackground=true;previous=SceneManager.GetActiveScene();yield return Load();Directory.CreateDirectory(Evidence);directory=Path.GetFullPath(Path.Combine("Library","EchoStation","RestoreTests",Guid.NewGuid().ToString("N")));var store=new LocalSaveStore(directory);var motor=actor.GetComponent<FirstPersonMotor>();actor.transform.position=new Vector3(-2.8f,.05f,.6f);WorldTarget.Active.TryGet("note_maintenance_01",out var note);motor.View.LookAt(note.transform.position);scene.GetPhysicsScene().Simulate(.02f);InputSystem.QueueStateEvent(inputs.Keyboard,new KeyboardState(Key.E));yield return R04ShadowProbe.Frame();InputSystem.QueueStateEvent(inputs.Keyboard,new KeyboardState());yield return R04ShadowProbe.Frame();Assert.That(actor.GetComponent<PlayerJournal>().Store.Entries.Count,Is.EqualTo(1));yield return Scan("scan_mark_01",new Vector3(8.1f,0,2.1f));yield return Scan("power_panel_01",new Vector3(3.8f,0,-1.5f));actor.transform.position=new Vector3(0,.05f,-6);motor.SetLookAngles(35,-10);actor.GetComponent<PlayerFlashlight>().SetOn(true);scene.GetPhysicsScene().Simulate(.02f);Assert.That(adapter.TrySave(store,out var error),Is.True,error);var saved=store.Read().Data;File.WriteAllText(Evidence+"/SavedPayload.json",JsonUtility.ToJson(saved,true));Assert.That(saved.journalIds.Length,Is.EqualTo(3));Assert.That(saved.scanIds.Length,Is.EqualTo(2));yield return Unload();yield return Load();WorldTarget.Active.TryGet("scan_mark_01",out var hidden);WorldTarget.Active.TryGet("power_panel_01",out var panel);var panelPose=panel.transform.position;Assert.That(hidden.GetComponent<ClueSource>().IsRevealed,Is.False);Assert.That(actor.GetComponent<PlayerJournal>().Store.Entries,Is.Empty);var result=new Result{reloaded=true};var journal=actor.GetComponent<PlayerJournal>().Store;journal.Added+=_=>result.addedEvents++;journal.Replaced+=()=>result.replacedEvents++;brain.GetComponent<EchoScanController>().Scanner.Ledger.Discovered+=_=>result.discoveryEvents++;Assert.That(adapter.TryLoad(store,out error),Is.True,error);result.restored=adapter.Capture();result.journalCount=journal.Entries.Count;result.scanCount=result.restored.scanIds.Length;result.hiddenRevealed=hidden.GetComponent<ClueSource>().IsRevealed;Assert.That(JsonUtility.ToJson(result.restored),Is.EqualTo(JsonUtility.ToJson(saved)));Assert.That(result.addedEvents,Is.Zero);Assert.That(result.discoveryEvents,Is.Zero);Assert.That(result.replacedEvents,Is.EqualTo(1));Assert.That(actor.GetComponent<PlayerFlashlight>().IsOn,Is.True);Assert.That(brain.CurrentMode,Is.EqualTo(IntentKind.Wait));Assert.That(actor.GetComponent<PlayerInputReader>().PointerCaptured,Is.False);Assert.That(journal.Entries[0].Id,Is.EqualTo("note_maintenance_01"));Assert.That(journal.Entries.All(e=>e.FullText!=e.Summary),Is.True);yield return Scan("power_panel_01",saved.echoPosition);Assert.That(journal.Entries.Count,Is.EqualTo(3));Assert.That(result.addedEvents,Is.Zero);Assert.That(result.discoveryEvents,Is.Zero);
+            var reader=actor.GetComponent<PlayerInputReader>();reader.SetApplicationFocus(true);reader.SetPointerCaptured(true);actor.GetComponent<JournalPanel>().SetOpen(true);Assert.That(adapter.TryRestore(SaveRestoreValidationTests.CabinData(),out error),Is.True,error);result.oldSaveHides=!hidden.GetComponent<ClueSource>().IsRevealed&&journal.Entries.Count==0&&brain.GetComponent<EchoScanController>().Scanner.Ledger.GetDiscoveredIds().Length==0;result.devicesUnchanged=panel.transform.position==panelPose;Assert.That(actor.GetComponent<JournalPanel>().IsOpen,Is.False);Assert.That(reader.UiBlocked,Is.False);Assert.That(brain.GetComponent<EchoScanController>().Scanner.LastReceipt,Is.Null);var follow=SaveRestoreValidationTests.CabinData();follow.echoMode="follow";Assert.That(adapter.TryRestore(follow,out error),Is.True,error);Assert.That(brain.CurrentMode,Is.EqualTo(IntentKind.Follow));result.passed=result.hiddenRevealed&&result.oldSaveHides&&result.devicesUnchanged&&result.journalCount==3&&result.scanCount==2;File.WriteAllText(Evidence+"/ActualReloadRestore.json",JsonUtility.ToJson(result,true));Assert.That(result.passed,Is.True);
+        }
+        [UnityTest]public IEnumerator P08_B02_TransientInvestigationSavesAsWaitAndRestoreRevokesMovementAndRejectsBadData()
+        {
+            yield return new EnterPlayMode();background=Application.runInBackground;Application.runInBackground=true;previous=SceneManager.GetActiveScene();yield return Load();Assert.That(brain.TrySubmit(ScriptCommands.Investigate("scan_mark_01"),out _),Is.True);var data=adapter.Capture();Assert.That(data.echoMode,Is.EqualTo("wait"));var before=JsonUtility.ToJson(data);var invalid=adapter.Capture();invalid.journalIds=new[]{"scan_mark_01"};Assert.That(adapter.TryRestore(invalid,out _),Is.False);Assert.That(JsonUtility.ToJson(adapter.Capture()),Is.EqualTo(before));Assert.That(adapter.TryRestore(data,out var error),Is.True,error);Assert.That(brain.CurrentMode,Is.EqualTo(IntentKind.Wait));Assert.That(brain.GetComponent<EchoNavigation>().State,Is.EqualTo(NavigationState.Idle));Assert.That(brain.GetComponent<EchoScanController>().Scanner.IsBusy,Is.False);var position=brain.transform.position;var end=Time.time+.5f;var timer=System.Diagnostics.Stopwatch.StartNew();while(Time.time<end){if(timer.Elapsed.TotalSeconds>5)Assert.Fail("Wait observation timeout.");yield return R04ShadowProbe.Frame();}Assert.That(Vector3.Distance(brain.transform.position,position),Is.LessThan(.01f));Assert.That(GameRuntimeOptions.UseLLM,Is.False);
+        }
+        [UnityTearDown]public IEnumerator After(){if(Application.isPlaying){yield return Unload();Application.runInBackground=background;yield return new ExitPlayMode();}if(directory!=null){var allowed=Path.GetFullPath(Path.Combine("Library","EchoStation","RestoreTests"))+Path.DirectorySeparatorChar;Assert.That(directory.StartsWith(allowed,StringComparison.OrdinalIgnoreCase),Is.True);if(Directory.Exists(directory))Directory.Delete(directory,true);directory=null;}}
+    }
+}

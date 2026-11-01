@@ -1,0 +1,1 @@
+EchoStation.InfiltrationMetal.Editor.MetalBake.Start("A");return new{started=true};

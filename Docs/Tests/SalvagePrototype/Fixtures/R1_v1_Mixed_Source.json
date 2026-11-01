@@ -1,0 +1,5 @@
+{
+  "source": "Builds/Salvage/Validation/R1_C/CrossProcessSave/slot1.json",
+  "sha256": "ef526b5fa59104832a047fe06ec02be8929b7124c093faf00cda5fa5311213c6",
+  "purpose": "Actual R1 version1 mixed snapshot for later authorized R2 migration test"
+}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1a0b2b52c70ed43aaa215961bb78e5, type: 3}
+  m_Name: ES_note_roster_01
+  m_EditorClassIdentifier: EchoStation.World.Runtime::EchoStation.World.ClueDefinition
+  uniqueId: note_roster_01
+  title: "\u503C\u73ED\u8BB0\u5F55"
+  fullText: "02:10\uFF0C\u503C\u73ED\u5458\u65AD\u5F00\u901A\u98CE\u56DE\u8DEF\u3002\u4EA4\u63A5\u8BB0\u5F55\u6307\u51FA\uFF0C\u5F02\u5E38\u8BFB\u6570\u5728\u65AD\u7535\u4E4B\u524D\u5DF2\u7ECF\u51FA\u73B0\u3002\u50A8\u7269\u5BA4\u5899\u9762\u7559\u6709\u8BBE\u5907\u6821\u51C6\u6807\u8BB0\uFF0C\u9700\u7531\u626B\u63CF\u8BBE\u5907\u8FA8\u8BA4\u3002"
+  summary: "\u5F02\u5E38\u65E9\u4E8E\u65AD\u7535\uFF1B\u50A8\u7269\u5BA4\u7559\u6709\u9700\u626B\u63CF\u8FA8\u8BA4\u7684\u6821\u51C6\u6807\u8BB0\u3002"
+  kind: 0

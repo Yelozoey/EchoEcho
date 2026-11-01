@@ -1,0 +1,7 @@
+# R4-A01e 三区美术布局与连续导航
+
+2026-10-30，module_tests独立NextLayoutTests，Layout_B实际2/2、18.068秒。Layout_A2/2与首图保留；人工检查发现背侧不可见，按F234修复后全项重测并看Layout_d485d2b7ecb44e54b12d0533a11f3687.png，西侧墙可见。光照和最终画面仍待R01。
+
+独立ES_Salvage_Next场景为36×24m三区，门洞x12-z6／18与x24-z12，原七货物世界位置保持。54地面＋54天花模块、墙面、门框、梁与墙侧控制台，新Rover和七种货物视觉。真实Echo连续通过三个门洞并沿短路返回，逐帧碰撞重叠检查、七货物完整路径均通过。NavMeshData是ES_Next_Nav，不修改旧共享数据。门框真实MeshCollider与常驻地面／墙Box不随未来视觉卸载。
+
+R2存档组件在新场景禁用以防误写，下一步独立新槽与偏好。没有把三区Root拆分当作Addressables完成，也没有把此Editor路径夹具写成Windows或60FPS验收。目标硬件与1080p基准同A01d报告；旧R2保留。

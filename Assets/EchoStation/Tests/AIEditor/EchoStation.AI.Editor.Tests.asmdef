@@ -1,0 +1,30 @@
+{
+  "name": "EchoStation.AI.Editor.Tests",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "references": [
+    "EchoStation.AI.Probe",
+    "EchoStation.AI.Models",
+    "EchoStation.AI.Tokenization",
+    "EchoStation.AI.Inference",
+    "EchoStation.AI.Context",
+    "EchoStation.AI.IntentJson",
+    "EchoStation.AI.Authorization",
+    "EchoStation.Dialogue.Knowledge",
+    "EchoStation.Dialogue.Commands",
+    "EchoStation.Memory.Runtime",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.AI.Execution",
+    "EchoStation.Story.Runtime"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll",
+    "Newtonsoft.Json.dll",
+    "Microsoft.ML.OnnxRuntime.dll"
+  ]
+}

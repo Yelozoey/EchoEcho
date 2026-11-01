@@ -1,0 +1,11 @@
+# R4-R03a-2 本地真实Bundle冒烟
+
+2026-10-30，Bundle_A2/2、1.860秒，module_tests完整门禁/Console0。自有设置路径SalvageNext/Addressables，只有本地PackedMode构建与PackedPlayMode播放，不用AssetDatabase FastMode充数；关闭远Catalog及启动更新。
+
+实际生成1288B Bundle与本地settings.json。新默认配置映射com.unity.addressableassets指向自有DefaultObject，原构建场景列表与其他配置名保持。设置准备/官方SBP构建均使用已独立验证的NextSdkSaveScope；实际阻止QualitySettings和旧ES_S2_ForwardHDR资产保存，外部dirty标记保留，未许可的ProjectSettings字节无变化。EditorBuildSettings只有必要映射作为已记录例外。
+
+播放中真实异步加载0.369秒，Provider为BundledAssetProvider，加载结果AssetDatabase路径为空；Native Bundle数0→1。二次请求共享同一实例，释放第一句柄后第二份仍有效；释放最后引用后Bundle数回0，执行UnusedAssets清理。句柄按所有权标志释放，不能因共享句柄IsValid仍true而重复Release。测试恢复原Addressables专用PlayerPrefs键。
+
+首次构建627.232秒包括F257可选报告弹窗等待与首次脚本编译，不能拿作加载时延。两次UIA索引失败未执行，随后最新截图坐标实际点击No继续原作业，未重放构建或启用Debug Build Layout。
+
+此项仅1个文本资产冒烟，不能代替三区场景流送、贴图/Mesh/Lightmap清理或Windows/目标机性能验收。旧单场景与R2均保留。

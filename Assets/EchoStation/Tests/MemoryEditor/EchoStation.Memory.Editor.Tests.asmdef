@@ -1,0 +1,8 @@
+{
+  "name": "EchoStation.Memory.Editor.Tests",
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "references": ["EchoStation.Memory.Runtime", "EchoStation.World.Runtime"],
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll", "Newtonsoft.Json.dll"]
+}

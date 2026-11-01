@@ -1,0 +1,10 @@
+{
+  "name": "EchoStation.Memory.Integration.Editor.Tests",
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "references": [
+    "EchoStation.Memory.Runtime", "EchoStation.Memory.Integration", "EchoStation.Player.Runtime", "EchoStation.World.Runtime",
+    "EchoStation.Echo.Runtime", "EchoStation.Echo.Editor", "EchoStation.Player.Editor", "EchoStation.World.Editor",
+    "EchoStation.Rendering.TestFixture", "Unity.InputSystem", "EchoStation.Player.Editor.Tests"
+  ]
+}

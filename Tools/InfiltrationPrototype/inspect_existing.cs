@@ -1,0 +1,5 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+var picks=new[]{"Platform_Simple","WallAstra_Straight","WallBand_Straight","ShortWall_Simple1_Straight","Door_Frame_SquareTall","Column_Simple","Prop_Computer","Prop_Chest","Prop_Light_Wide"};
+var rows=new Newtonsoft.Json.Linq.JArray();
+foreach(var name in picks){var path="Assets/EchoStation/SalvageNext/Prefabs/Facilities/ES_"+name+".prefab";var asset=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(path);if(!asset)throw new System.Exception(path);var renderers=asset.GetComponentsInChildren<UnityEngine.Renderer>(true);var b=renderers[0].bounds;foreach(var r in renderers)b.Encapsulate(r.bounds);rows.Add(new Newtonsoft.Json.Linq.JObject{{"name",name},{"path",path},{"center",new Newtonsoft.Json.Linq.JArray(b.center.x,b.center.y,b.center.z)},{"size",new Newtonsoft.Json.Linq.JArray(b.size.x,b.size.y,b.size.z)},{"materials",Newtonsoft.Json.Linq.JArray.FromObject(renderers.SelectMany(r=>r.sharedMaterials).Where(m=>m).Select(m=>m.name).Distinct().ToArray())}});}
+return rows;

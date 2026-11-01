@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EchoStation S3 structured intent",
+  "description": "Single strict JSON object, maximum4096 UTF8 bytes. Duplicate keys and invalid Unicode rejected before schema. C# UTF16 content length<=280 additionally enforced by validate_intent.py. No network/schema fetch.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "const": "follow"
+        }
+      },
+      "required": [
+        "intent"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "const": "investigate"
+        },
+        "targetName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 280,
+          "pattern": "\\S",
+          "x-maxUtf16Length": 280
+        }
+      },
+      "required": [
+        "intent",
+        "targetName",
+        "content"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "const": "wait"
+        }
+      },
+      "required": [
+        "intent"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "const": "warn"
+        },
+        "dangerTarget": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 280,
+          "pattern": "\\S",
+          "x-maxUtf16Length": 280
+        }
+      },
+      "required": [
+        "intent",
+        "dangerTarget",
+        "content"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "const": "answer"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 280,
+          "pattern": "\\S",
+          "x-maxUtf16Length": 280
+        }
+      },
+      "required": [
+        "intent",
+        "content"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "intent": {
+          "const": "refuse"
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 280,
+          "pattern": "\\S",
+          "x-maxUtf16Length": 280
+        }
+      },
+      "required": [
+        "intent",
+        "content"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

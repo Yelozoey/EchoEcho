@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe32e4daa60de34b8d089026a1af095, type: 3}
+  m_Name: ES_UITheme
+  m_EditorClassIdentifier: EchoStation.SalvageNext.Runtime::EchoStation.SalvageNext.NextUiTheme
+  Panel: {fileID: 21300000, guid: 5ca422eebe5dd384fbcf4a0935680084, type: 3}
+  Button: {fileID: 21300000, guid: 251bd2949a971754f98cf3c0ed6ca99c, type: 3}
+  Crosshair: {fileID: 21300000, guid: 0fae0ce44171e024d89152e6ef8186b4, type: 3}
+  E: {fileID: 21300000, guid: 10fdac55c5e6cd0419772a994818d2a2, type: 3}
+  G: {fileID: 21300000, guid: 85fc500d9d6f3974188c0ca6f3ff9af1, type: 3}
+  R: {fileID: 21300000, guid: 2f0f312d54006d640a467de6e4aa142d, type: 3}
+  Tab: {fileID: 21300000, guid: f3e24d3e37fcd004f8c27388c291018a, type: 3}
+  F: {fileID: 21300000, guid: e6f600d5d60fe7344993a4cdcf5e6ba9, type: 3}
+  T: {fileID: 21300000, guid: 4e82bda4a1f6f994cb39af5a63d6116c, type: 3}

@@ -1,0 +1,19 @@
+{
+  "name": "EchoStation.Salvage.Runtime",
+  "references": [
+    "EchoStation.Player.Runtime",
+    "Unity.InputSystem",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "UnityEngine.UI",
+    "EchoStation.Echo.Runtime",
+    "EchoStation.Memory.Runtime",
+    "EchoStation.World.Runtime",
+    "EchoStation.Dialogue.Runtime",
+    "EchoStation.Rendering.Runtime"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll"
+  ]
+}

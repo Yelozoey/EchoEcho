@@ -1,0 +1,7 @@
+{
+ "name":"EchoStation.AI.Probe",
+ "references":[],
+ "overrideReferences":true,
+ "precompiledReferences":["Newtonsoft.Json.dll","Microsoft.ML.OnnxRuntime.dll"],
+ "noEngineReferences":true
+}

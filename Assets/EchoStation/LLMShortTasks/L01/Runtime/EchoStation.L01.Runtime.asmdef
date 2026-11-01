@@ -1,0 +1,1 @@
+{"name":"EchoStation.L01.Runtime","references":["EchoStation.L01.Domain","EchoStation.SalvageExpansion.Runtime","EchoStation.SalvageExpansion.Domain","EchoStation.Player.Runtime","EchoStation.Salvage.Runtime","EchoStation.Echo.Runtime","EchoStation.World.Runtime","Unity.InputSystem","UnityEngine.UI"]}

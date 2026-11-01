@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "files": 6345,
+  "bytes": 352729689,
+  "textFilesScanned": 6032,
+  "assetGuids": 2407,
+  "mainSceneDependencies": 309,
+  "modelMetadataHashes": 15,
+  "largest": [
+    {
+      "path": "Assets/EchoStation/AI/ThirdParty/OnnxRuntime/Plugins/x86_64/onnxruntime.dll",
+      "bytes": 17253176
+    },
+    {
+      "path": "Assets/EchoStation/ThirdParty/Noto/Resources/NotoSansCJKsc-Regular.otf",
+      "bytes": 16437364
+    },
+    {
+      "path": "Assets/StreamingAssets/EchoLLM/Qwen3_06B_Q4/tokenizer.json",
+      "bytes": 11422654
+    },
+    {
+      "path": "Assets/StreamingAssets/EchoLLM/Qwen25_05B_W8A8/tokenizer.json",
+      "bytes": 7031645
+    },
+    {
+      "path": "Assets/EchoStation/Station/Scenes/ES_Station_Greybox/Lightmap-0_comp_light.exr",
+      "bytes": 6870963
+    },
+    {
+      "path": "Assets/EchoStation/ThirdParty/PolyHaven/ES_concrete_floor_02_Normal.png",
+      "bytes": 6297394
+    },
+    {
+      "path": "Assets/EchoStation/ThirdParty/PolyHaven/ES_painted_plaster_wall_Normal.png",
+      "bytes": 5688118
+    },
+    {
+      "path": "Assets/EchoStation/ThirdParty/PolyHaven/ES_painted_plaster_wall_BaseColor.png",
+      "bytes": 5617058
+    }
+  ],
+  "errors": [],
+  "secretFindings": [],
+  "reviewedExamples": [
+    {
+      "path": "Packages/com.coplaydev.unity-mcp/Editor/Tools/Blender/BlenderBridgeTool.cs",
+      "line": 856,
+      "kind": "credential-url",
+      "lineSha256": "8692b835c2b7c269a7a81e8310a6272dfcbcc469d7b2ef90f6c4c8297968f54f",
+      "reason": "Reviewed upstream XML documentation example explaining URL credential redaction, with dummy user/pass and host; not an actual stored credential. Exact line hash required."
+    }
+  ],
+  "scope": "Index path/size/meta/dependency and recognized-token scan; not a guarantee against every secret format or fresh-machine Unity import"
+}

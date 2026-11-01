@@ -1,0 +1,7 @@
+EchoStation.Rendering.Editor.SceneSafetyGuard.RequireClean();
+if(UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage()!=null)throw new System.InvalidOperationException("Preserving open Prefab Stage");
+var api=System.AppDomain.CurrentDomain.GetAssemblies().Select(a=>a.GetType("UnityEditor.TestTools.TestRunner.Api.TestRunnerApi")).First(t=>t!=null);
+var method=api.GetMethod("IsRunActive",System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static);
+if(method==null||(bool)method.Invoke(null,null))throw new System.InvalidOperationException("Test runner active or unknown");
+if(UnityEngine.Application.dataPath!="E:/Projects/Unity/EchoStation/Assets")throw new System.InvalidOperationException("Wrong project");
+return new {utc=System.DateTime.UtcNow.ToString("O"),clean=true,pid=System.Diagnostics.Process.GetCurrentProcess().Id,assets=UnityEngine.Application.dataPath,api=UnityEngine.SystemInfo.graphicsDeviceType.ToString(),testsActive=false};

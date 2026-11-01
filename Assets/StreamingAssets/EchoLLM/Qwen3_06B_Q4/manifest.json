@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "releaseId": "echo-qwen3-06b-q4-last-v1",
+  "files": [
+    {
+      "name": "config.json",
+      "bytes": 726,
+      "sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 239,
+      "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+    },
+    {
+      "name": "LICENSE.txt",
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    {
+      "name": "model.onnx",
+      "bytes": 919096845,
+      "sha256": "3133e1a38a41588d5122e96f89d6ccdd06ce641c4432f547e99ea8a690ead303"
+    },
+    {
+      "name": "MODEL_CARD.md",
+      "bytes": 13965,
+      "sha256": "1ab64a26fcb3b461423b89a433a8c858f1bf8d4086f979cbb3ff878d47cf20e9"
+    },
+    {
+      "name": "NOTICE.md",
+      "bytes": 1529,
+      "sha256": "815e9cfa71dc77ac31bf914174564370545135f41b415ad67ee2894e6b06b744"
+    },
+    {
+      "name": "PROVENANCE.json",
+      "bytes": 1432,
+      "sha256": "21acafbb6d9f8b04dd5c9ea22cfc74c18595a256169d1e01391406f4837c42a1"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 9732,
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+    }
+  ]
+}
