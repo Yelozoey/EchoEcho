@@ -11,3 +11,5 @@
 许可：已有CC0/OFL/ORT MIT/模型Apache元数据通知保留，嵌入MCP缺的完整MIT通知按官方raw文本核对补在ThirdPartyNotices；未给自有源码或第三方资产统一套新许可。urllib许可证请求TLS EOF使用web同官方raw文本核对，不关闭TLS或改网络；OGA片本轮web受限，沿用此前项目已验证JamesWhite/CC0来源，不冒称本轮完整重验。
 
 HANDOFF.md已提供主场景、架构、约束、实际测试、已知高帧时、模型No-Go/恢复、Git排除范围与下一A02需要确认的规则。未开始守卫、潜入闭环、模型实验或Windows打包。正常克隆能获得本轮所需的309个依赖路径（Unity内建/声明UPM包例外经包管理器还原），未额外创建新工作树或对新克隆启动Unity；不把静态仓库审计当新机运行验收。
+
+最终同范围Audit_Final_A实际6347文件通过；Git fsck退出0。主体提交11f0ea97869fbae92e429fbc209ab53beb7685a4已正常推送，HTTP/1.1 ls-remote逐字核对远端main一致，远端HANDOFF网页已读取；网络初始重置与恢复见F-381。后续仅普通文档补充提交，不改已验证游戏代码。NativeVerified_PostGit_A再次确认5设置/磁盘/dirty/运行时一致，场景clean/Edit；Budget_Final_A20.246182/21GiB（含.git），旧大件均保留。

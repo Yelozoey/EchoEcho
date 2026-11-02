@@ -90,4 +90,6 @@ Qwen2.5处理暂停；本地LoRA仅提案，用户选择保留，未授权现在
 
 目标仓库`https://github.com/Yelozoey/EchoEcho`，分支main，使用正常Git推送。Assets及.meta、Packages、ProjectSettings、C#、工具、MD报告与精选本轮图进入Git；Library/Temp/Logs/UserSettings、Builds、模型权重、原始Profiler、下载包与机器私有配置被忽略且保留本机。模型清单/tokenizer/许可保留，第三方通知见[仓库许可索引](Docs/Repository/ThirdPartyNotices.md)。当前自己的代码未新增统一开源许可证，不要擅自给第三方资产统一改许可。
 
+主体工程已实际推送并回读远端SHA一致，发布基线见[Publication.md](Docs/Repository/Publication.md)。本机网络偶发重置时，本轮单次HTTP/1.1命令成功，不要因此更改全局代理/关闭TLS。当前计账约20.25/21GiB，Git元数据已计入。接手以main当前HEAD为准，不只看文档中历史基线SHA。
+
 历史报告可能指向只在原机保留的完整Evidence/原包或绝对路径，这是可重建工程交付策略，不是声称那些数据不存在。本轮必要烘焙/材质收据和精选图保留在仓库，完整原始保护快照不公开。接手时先`git status`检查用户变化、核对主场景，不要重置工作树或复活旧原型任务。

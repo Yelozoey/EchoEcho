@@ -1,5 +1,11 @@
 # EchoStation 故障与经验记录
 
+## F-381：初始Git上传连接被重置
+
+本地提交与dry-run已成功，首次实际HTTPS push在枚举对象前返回Recv failure: Connection was reset。未将dry-run或本地commit当上传成功；先回读远端分支，再以单次git -c http.version=HTTP/1.1正常推送重试，不改全局代理/TLS/网络、不强推。最终必须比较远端refs/heads/main与本地HEAD并记录结果，网络错误回执保留。
+
+本轮恢复：HTTP/1.1主体推送成功，默认协议的首次回读遇到443端口连接失败；HTTP/1.1回读确认远端main为11f0ea97869fbae92e429fbc209ab53beb7685a4，与本地一致，web也已实际读取远端HANDOFF。使用过程只改单次命令参数。Git fsck退出0，初期换行重建索引产生的dangling blobs属未引用旧暂存对象，不是损坏，不手动删除用户文件。
+
 ## F-380：凭据格式扫描命中上游脱敏说明示例
 
 Audit_Index_A资产/依赖/大小及15个模型元数据SHA均通过，但凭据URL规则命中BlenderBridgeTool.cs856。未上传前先红显脱敏上下文，确认是上游XML注释对user/pass虚构URL的安全说明，并非本机凭据。用路径/行号/类型/整行SHA精确白名单加理由留档，源码不改；修改这一行将重新触发审查。扫描报告不输出疑似值，只输出位置和哈希，未将真实凭据自动忽略。
